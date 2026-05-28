@@ -1,0 +1,345 @@
+HISTORIA 3 CHIMENEAS
+
+1913-54 - Antecedentes: la primera central térmica en el Besós
+
+Primera central eléctrica en la desembocadura del río 
+
+Besòs
+
+, diseñada para atender una Barcelona en expansión.
+
+El origen de la producción eléctrica en la desembocadura del río 
+
+Besòs
+
+ se remonta a 1913, cuando se inauguró la primera central térmica de ciclo convencional alimentada con carbón, propiedad de la empresa Energía Eléctrica de Cataluña, sociedad fundada en 1911. Esta instalación fue la primera gran planta térmica construida en esta zona y respondió a la creciente necesidad de electricidad de una Barcelona en pleno proceso de industrialización y expansión urbana a comienzos del siglo XX.
+
+La central fue diseñada por el arquitecto Eduard Ferrés y construida por la empresa Construcciones y Pavimentos, utilizando hormigón armado y aplicando por primera vez en Cataluña el denominado sistema 
+
+Hennebique
+
+, una técnica innovadora para la época que permitía estructuras más resistentes y de mayor tamaño. Las obras comenzaron en abril de 1912 y la central se conectó a la red eléctrica el 23 de marzo de 1913.
+
+El proyecto original preveía la instalación de ocho turboalternadores, aunque en su puesta en marcha inicial solo entraron en funcionamiento dos, con una potencia de 7,5 MW cada uno. Un año más tarde, en 1914, la central fue ampliada con un nuevo grupo de 15 MW, aumentando así su capacidad productiva. La electricidad generada se producía a una tensión de 11 kV, que posteriormente se elevaba hasta 80 kV en la sala de transformadores.
+
+Uno de los elementos más destacados de esta primera central fue su conexión con la central hidroeléctrica de 
+
+Cabdella
+
+, también propiedad de Energía Eléctrica de Cataluña. Ambas instalaciones estaban unidas mediante una línea de alta tensión de 80 kV y 175 kilómetros de longitud, la primera red de este tipo construida en Cataluña, lo que convirtió a la central del Besós en una pieza clave del sistema eléctrico catalán.
+
+El edificio de calderas albergaba dieciséis generadores de vapor Delaunay-Belleville, y la evacuación de humos se realizaba a través de cuatro chimeneas de 60 metros de altura. Para el proceso de condensación del vapor se utilizaba agua del mar, captada mediante cuatro tuberías de hierro colado sostenidas por una estructura de hormigón que se adentraba unos 150 metros en el mar.
+
+La actividad de la central se vio seriamente afectada durante la Primera Guerra Mundial, debido al bloqueo marítimo que dificultó el abastecimiento de carbón procedente de Gran Bretaña. Esta situación empeoró a partir de 1918, cuando dos de los tres grupos generadores sufrieron averías, lo que dejó la central prácticamente inactiva durante varios años. No fue hasta 1923 cuando se recuperó parcialmente la producción, gracias a la instalación de un nuevo turbogenerador y tres transformadores que permitieron aumentar de nuevo la potencia.
+
+Ese mismo año, la empresa Energía Eléctrica de Cataluña pasó a manos de la sociedad Barcelona 
+
+Traction
+
+, conocida popularmente como la 
+
+Canadiense
+
+. Durante la Guerra Civil española, la central térmica de San Adrián adquirió una gran importancia estratégica, ya que garantizaba el suministro eléctrico de Barcelona tras la pérdida de las centrales hidroeléctricas del Pirineo. Por este motivo, fue objetivo de bombardeos y el 13 de noviembre de 1938 la aviación italiana atacó la instalación, causando dieciséis víctimas mortales.
+
+Últimos años de la primera central y su sustitución por instalaciones modernas.
+
+En 1939, durante la retirada del ejército republicano, parte de las instalaciones fueron voladas, quedando operativo únicamente un grupo de 7,5 MW. Tras la guerra, la central continuó funcionando de manera limitada hasta que en 1948 la empresa Barcelona 
+
+Traction
+
+ fue declarada en quiebra. Como consecuencia, sus activos pasaron a la recién creada Fuerzas Eléctricas de Cataluña, S.A. (FECSA).
+
+Finalmente, dentro del proceso de reorganización del sistema eléctrico, FECSA decidió cesar la actividad de la antigua central. En 1954, la primera térmica del Besós dejó definitivamente de funcionar y fue sustituida por nuevas instalaciones más modernas, construidas en parcelas cercanas, marcando el final de esta primera etapa y el inicio del camino que conduciría, años más tarde, a la construcción de la central de las Tres Chimeneas.
+
+Fact
+
+: La aviación italiana bombardeó la central original durante la guerra civil, el 13 de noviembre de 1938. Nunca se repuso de los daños.
+
+1959 - FECSA impulsa nuevas plantas termoeléctricas y se inaugura Badalona I.
+
+A finales de la década de 1950, Fuerzas Eléctricas de Cataluña (FECSA) percibió que la demanda de energía eléctrica en el área metropolitana de Barcelona crecía a un ritmo acelerado debido al desarrollo industrial y al aumento de población. El sistema hidráulico ya no era suficiente por sí solo para satisfacer las necesidades de consumo, por lo que FECSA decidió invertir en nuevas instalaciones termoeléctricas que complementaran y reforzaran la producción eléctrica de la región. En este contexto, en 1959 FECSA inauguró la central térmica Badalona I, una planta de generación de electricidad ubicada en la ribera del 
+
+Besòs
+
+, concebida inicialmente como una central de reserva energética para asegurar el suministro en momentos de alta demanda. Esta central fue la primera de una nueva serie de plantas que, junto con las instalaciones históricas existentes, marcó el inicio de un crecimiento sostenido de la generación térmica en la zona. Aunque inicialmente Badalona I estaba pensada para cubrir picos de demanda, el fuerte incremento del consumo energético urbano y el desarrollo económico de los años sesenta llevaron a que rápidamente se integrara como una instalación activa dentro del sistema eléctrico catalán
+
+1965 – FECSA inaugura Badalona II con mayor potencia y genera controversia por la contaminación.
+
+En 1965, Fuerzas Eléctricas de Cataluña (FECSA) amplió su capacidad de generación eléctrica en el litoral del 
+
+Besòs
+
+ con la puesta en marcha de la central térmica Badalona II, construida para responder al incremento continuo de la demanda de energía en el área metropolitana de Barcelona. Esta nueva instalación incorporó avances tecnológicos que permitieron aumentar la potencia instalada hasta aproximadamente 320 MW, una cifra superior a la de la central original de Badalona I, y se alimentaba mediante fuelóleo, un combustible derivado del petróleo.
+
+La llegada de Badalona II supuso un salto en el desarrollo energético de la comarca, aunque al mismo tiempo intensificó las críticas y preocupaciones entre la población local debido al aumento de la contaminación atmosférica que generaba. Las emisiones de hollín, partículas y gases derivados de la combustión de fuelóleo perjudicaban la calidad del aire y la salud de los vecinos, lo que incrementó la sensibilización social hacia los impactos ambientales de las plantas térmicas.
+
+Fact
+
+: El conjunto de instalaciones de FECSA en la zona, que incluían Badalona I y su sucesora Badalona II, presentaban un estilo industrial funcional, característico de la arquitectura de infraestructura energética de mediados del siglo XX, y fueron parte de un proceso de expansión energética que culminaría más adelante con la construcción de la central de las Tres Chimeneas, diseñada en un estilo 
+
+brutalista
+
+ que llegaría a convertirse en el edificio más alto del Mediterráneo dentro de su tipología industrial.
+
+1966 – Primera gran protesta ciudadana contra la contaminación de la central térmica.
+
+En 1966, en pleno régimen franquista, se produjo una de las primeras manifestaciones vecinales contra la contaminación generada por las plantas eléctricas en la ribera del 
+
+Besòs
+
+. Más de un millar de personas —y sobre todo mujeres del municipio de Sant Adrià de 
+
+Besòs
+
+— salieron a la calle para denunciar lo que llamaban el “polvillo negro” que la central y otras industrias lanzaban al aire, depositándose en las viviendas, la ropa tendida y las calles cercanas. Esta protesta de amplio alcance social, poco común en la España de la dictadura, fue motivada por las graves molestias ambientales que sufría la población debido a las emisiones de hollín y partículas derivadas de la combustión de combustibles fósiles en las instalaciones térmicas de la zona. 
+
+Gracias a la presión ciudadana, la protesta llegó hasta el Ministerio responsable, y las autoridades energéticas se vieron obligadas a modificar el proyecto de la nueva central térmica, que ya estaba en construcción en ese momento. Como resultado, las chimeneas (inicialmente proyectadas con una altura aproximada de 180 m) se elevaron finalmente hasta los 200 m, con la intención de dispersar mejor los gases contaminantes y reducir el impacto atmosférico sobre el entorno más inmediato. 
+
+Fact
+
+: Las instalaciones generaban una contaminación intensa, ya que una de las chimeneas operaba quemando “
+
+cop
+
+ de 
+
+petroli
+
+”, un residuo pesado del petróleo sin otro uso industrial, que producía emisiones especialmente densas y sucias. Los días en que la central estaba activa, la ropa tendida en los balcones y los coches aparcados se llenaban de manchas y agujeros por el hollín, y los jardines y terrazas quedaban cubiertos de polvo negro. 
+
+Fact
+
+: Aunque las chimeneas no funcionaban de forma continua, cuando se encendían y no se les hacía un mantenimiento adecuado, expulsaban mucho hollín y esto provocaba una corrosión visible en las superficies cercanas, lo que aumentaba aún más la percepción de suciedad y deterioro en el entorno urbano.
+
+1971‑73 – Construcción del primer bloque de las Tres Chimeneas.
+
+En 1971, Fuerzas Eléctricas de Cataluña (FECSA) inició la construcción de una nueva central térmica de ciclo convencional en el mismo lugar donde había funcionado la central histórica anterior. Esta nueva planta se concibió para reforzar la producción eléctrica en el área metropolitana de Barcelona, que experimentaba un fuerte crecimiento industrial y demográfico. El primer bloque generador, posteriormente denominado San Adrián I, fue construido entre 1971 y 1973 y tenía una potencia de 350 MW. La obra formaba parte de un proyecto mayor que iba a transformar completamente la infraestructura eléctrica de la ribera del 
+
+Besòs
+
+.
+
+1972.74 – Construcción del segundo bloque de las Tres Chimeneas.
+
+Simultáneamente al primer bloque, FECSA levantó el segundo grupo generador, denominado San Adrián II, entre 1972 y 1974. Este segundo bloque contaba también con una potencia de 350 MW, y su construcción respondía al aumento continuo del consumo energético, que requería disponer de instalaciones más grandes y eficientes
+
+1973 – Protesta obrera con consecuencias trágicas durante la construcción.
+
+Durante la construcción de la central, las condiciones laborales y las tensiones sociales derivadas del ritmo de trabajo y de las reivindicaciones de los obreros provocaron conflictos laborales. El 3 de abril de 1973, en plena construcción del primer bloque, se produjo una protesta de trabajadores reclamando mejoras laborales. En el transcurso de esa movilización, la policía franquista intervino con disparos, resultando en la muerte del obrero Manuel Fernández Márquez, de 27 años, y en heridas a otro obrero y a varios agentes. Este suceso se convirtió en un episodio histórico de confrontación social en torno a las obras de la térmica, y tuvo eco en las reivindicaciones laborales y sindicales de la época.
+
+1975-76 – Construcción del tercer bloque de las Tres Chimeneas.
+
+Ante la alta demanda de energía y el crecimiento del parque industrial y urbano, FECSA decidió añadir un tercer bloque generador, San Adrián III, también de 350 MW. Este tercer grupo se construyó entre 1975 y 1976 y se conectó a la red en 1976, completando así la instalación de las tres unidades térmicas que constituyen la central de las Tres Chimeneas.
+
+Fact
+
+: Inicialmente, la instalación se proyectó con dos chimeneas, pero el aumento imprevisto de la demanda energética motivó la incorporación de una tercera turbina. Al no estar contemplada en los planos originales, fue necesario adaptarla a un terreno distinto, más próximo a la ribera del río, lo que explica que las chimeneas no sean equidistantes: 53 metros separan la primera de la segunda y 63 metros, la segunda de la tercera.
+
+Fact
+
+: Aunque las Tres Chimeneas tenían una potencia elevada, su uso habitual no era continuo. Funcionaban principalmente como centrales supletorias dentro del sistema eléctrico catalán y se activaban en momentos de gran demanda energética, pudiendo llegar a suministrar entre el 25 % y el 30 % del consumo de Cataluña en esos picos.
+
+Fact
+
+: Con tres bloques de 350 MW cada uno, la central alcanzaba una potencia global de aproximadamente 1 050 MW, comparable a la producción de una central nuclear convencional, emitiendo alrededor de 57.000 toneladas de Dióxido de Azufre.
+
+Fact
+
+: La operación y mantenimiento de las tres unidades generadoras también supuso una fuente significativa de empleo. Durante los años de plena actividad de la planta, numerosas personas —incluyendo muchas que habían emigrado desde zonas rurales del sur de España en busca de trabajo— encontraron empleo en la construcción y operación de las instalaciones, lo que contribuyó al desarrollo económico del área metropolitana.
+
+1983 – Se declara a San 
+
+Adriá
+
+ del Besós como “zona atmosférica contaminada”.
+
+En 1983, el impacto ambiental acumulado en el entorno de la central térmica de Sant Adrià de 
+
+Besòs
+
+ y otras industrias de la ribera del 
+
+Besòs
+
+ alcanzó un punto crítico, hasta el punto de que las autoridades españolas decretaron oficialmente la zona como “zona atmosférica contaminada”, reconociendo que los niveles de polución en el aire superaban los límites aceptables y suponían un riesgo importante para la salud y el medio ambiente de la población local. Esta declaración fue resultado del fuerte rechazo social y de estudios ambientales que mostraban niveles elevados de emisiones de partículas, hollín, dióxido de azufre y otros contaminantes procedentes de las actividades industriales y de generación eléctrica de la zona.
+
+El reconocimiento formal de Sant Adrià de 
+
+Besòs
+
+ como área contaminada reflejaba la grave situación ambiental que se vivía en aquella época: comunidades enteras sufrían los efectos visibles de las emisiones de las térmicas, desde ropa y fachadas manchadas por hollín hasta problemas respiratorios en la población, y el entorno urbano y natural quedaba marcado por décadas de contaminación industrial.
+
+2008 – Ciudadanos de San 
+
+Adriá
+
+ se opusieron, en referéndum, a la demolición de las chimeneas cuando la central térmica quedó completamente inactiva.
+
+En noviembre de 2008, cuando la central térmica de San Adrià de 
+
+Besòs
+
+ ya estaba próxima a dejar de funcionar tras décadas de actividad, el Ayuntamiento convocó una consulta popular entre los vecinos para decidir el futuro de las emblemáticas Tres Chimeneas, que la compañía eléctrica había planteado demoler al cesar la explotación de la planta. 
+
+La participación despertó interés cívico y de alrededor de 2 600 vecinos que votaron, el 82 % se pronunció a favor de mantener las chimeneas en pie, frente a 406 votos en contra, lo que representó una mayoría clara a favor de su conservación urbanística y patrimonial. El porcentaje de participación fue alrededor del 9,1 % del censo electoral, una cifra que reflejó la implicación de la ciudadanía en una decisión de impacto simbólico y cultural para el municipio.
+
+La consulta tuvo un carácter vinculante, y aunque no definió aún un uso concreto para las gigantes estructuras de hormigón, sí marcó una voluntad popular clara de preservar este elemento del paisaje urbano de Sant Adrià de Besòs, considerado por muchos vecinos como un símbolo identitario de la ciudad. Con este resultado, se frenó la intención inicial de la eléctrica de derribar las chimeneas al desmantelar la central, lo que abrió paso a posteriores debates sobre su reutilización cultural y urbana.
+
+Fact
+
+: La causa del cierre de estas es que empiezan a ser obsoletas y dejan de ser rentables, además del gran impacto ambiental que generaban.
+
+2011 – Endesa puso final al funcionamiento de la central.
+
+En 2011, la compañía Endesa, propietaria de la central térmica de Sant Adrià de 
+
+Besòs
+
+ tras los procesos de concentración del sector eléctrico, puso fin de manera definitiva al funcionamiento de las Tres Chimeneas. La instalación llevaba ya varios años operando de forma muy limitada y únicamente como central de apoyo en situaciones excepcionales de alta demanda energética.
+
+El cierre respondió a la obsolescencia tecnológica de la planta, a su baja rentabilidad económica y al endurecimiento de la normativa medioambiental europea, que exigía fuertes inversiones para reducir las emisiones contaminantes de dióxido de azufre, óxidos de nitrógeno y partículas. Endesa descartó acometer estas mejoras, optando por el cese definitivo de la actividad.
+
+Con el apagado de la central se cerró una etapa histórica de la producción eléctrica en la desembocadura del 
+
+Besòs
+
+, iniciada casi un siglo antes. A partir de ese momento comenzó el proceso de desmantelamiento de las instalaciones interiores, mientras que las Tres Chimeneas permanecieron en pie como testimonio físico del pasado industrial y energético de Sant Adrià de 
+
+Besòs
+
+ y del área metropolitana de Barcelona.
+
+2012 – Inicio del proceso para la declaración como Bien Cultural de Interés Local.
+
+Tras años de lucha vecinal y de iniciativas a favor de la conservación de las emblemáticas Tres Chimeneas y de la antigua sala de turbinas de la central térmica de Sant Adrià de Besòs, el Ayuntamiento inició en 2012 los trámites administrativos para proteger el conjunto como patrimonio histórico y cultural. Este paso respondía a la preocupación ciudadana ante la posibilidad de derribo de las estructuras tras el cierre de la central y a la necesidad de reconocer su valor histórico, arquitectónico, industrial y simbólico dentro del paisaje metropolitano.
+
+El impulso del proceso partió principalmente de la Plataforma per la 
+
+Conservació
+
+ de les Tres 
+
+Xemeneies
+
+, que presentó solicitudes formales y promovió estudios e informes técnicos destinados a justificar la catalogación del conjunto como Bien Cultural de Interés Local. Estas iniciativas pusieron en valor la central no solo como infraestructura energética, sino también como testimonio de la historia industrial, social y ambiental del 
+
+Besòs
+
+.
+
+Durante esta etapa inicial, el expediente quedó abierto y sujeto a los procedimientos administrativos correspondientes, dando comienzo a un periodo prolongado de análisis técnico, debate institucional y reivindicación ciudadana sobre el futuro de uno de los elementos más emblemáticos del litoral metropolitano.
+
+2012 -2016 – Tramitación administrativa y debate institucional.
+
+Entre 2012 y 2016, el proceso de declaración como Bien Cultural de Interés Local se prolongó debido a la complejidad administrativa del expediente y a la necesidad de recabar informes técnicos especializados. Durante estos años se produjeron debates políticos y urbanísticos en torno al futuro del recinto de la central térmica y al encaje de las chimeneas dentro de los planes de transformación del frente litoral.
+
+A lo largo de este periodo, la conservación de las Tres Chimeneas se mantuvo como una reivindicación constante por parte de colectivos ciudadanos y del propio Ayuntamiento, que defendían su valor como símbolo del pasado industrial de Sant Adrià de 
+
+Besòs
+
+ y como memoria de las luchas sociales y ambientales vinculadas a la producción energética en la zona.
+
+2016 – Declaración definitiva como Bien Cultural de Interés Local.
+
+En 2016, el pleno del Ayuntamiento de Sant Adrià de 
+
+Besòs
+
+ aprobó de manera definitiva la declaración de las Tres Chimeneas y de la antigua sala de turbinas como Bien Cultural de Interés Local. Con esta resolución se culminó un proceso iniciado cuatro años antes y se otorgó protección jurídica efectiva al conjunto, impidiendo su demolición y asegurando su preservación dentro del patrimonio urbano y cultural del municipio.
+
+Esta declaración supuso el reconocimiento institucional del valor histórico, arquitectónico y simbólico de la central térmica, consolidando a las Tres Chimeneas como uno de los principales referentes del patrimonio industrial del área metropolitana de Barcelona y como un elemento clave de la identidad colectiva de Sant Adrià de Besòs.
+
+2018 – Endesa y Metrovacesa se unen para planificar la transformación del área.
+
+En A finales de 2018, Endesa Generación y Metrovacesa constituyeron la sociedad conjunta Front 
+
+Marítim
+
+ del 
+
+Besòs
+
+ con la finalidad de planificar la transformación urbanística de 
+
+los 32 hectáreas
+
+ que ocupan los terrenos de las Tres Chimeneas de Sant Adrià de Besòs. Endesa, que había heredado gran parte de la propiedad tras la adquisición de 
+
+Fecsa
+
+ en 1996, aportó al acuerdo la mayor parte de los terrenos, valorados en decenas de millones de euros, mientras que Metrovacesa sumó al proyecto una porción significativa del suelo para desarrollo residencial y terciario. Esta alianza marcó el inicio de un plan que pretende convertir el antiguo recinto industrial en usos mixtos urbanos, incluyendo viviendas, equipamientos y actividades económicas y culturales, sujeto al desarrollo de un Plan 
+
+Director
+
+ Urbanístico promovido por la Generalitat de Cataluña, el 
+
+Consorci
+
+ del 
+
+Besòs
+
+ y los ayuntamientos implicados. 
+
+2021 – Convenio para derribar el muro y mejorar la conectividad urbana.
+
+El 8 de julio de 2021, los ayuntamientos de Sant Adrià de 
+
+Besòs
+
+ y Badalona firmaron un convenio urbanístico con Metrovacesa y Endesa que permitió planificar el derribo del muro existente junto a la calle Eduard Maristany, un límite físico que separaba los municipios y estrechaba la movilidad peatonal y vehicular en el frente litoral. El acuerdo contempló la ampliación de la calle —de unos 9 metros hasta aproximadamente 20 metros de ancho— con nuevas aceras, infraestructura urbana como carril bici, iluminación y arbolado, mejorando la conectividad entre ambos municipios y facilitando la integración del ámbito de las Tres Chimeneas con el paseo marítimo y el entorno metropolitano.
+
+2023 – 7 de marzo de 2023 – Aprobación PDU Tres Chimeneas.
+
+El Plan director urbanístico propone, por un lado, delimitar y ordenar un sector de nueva ordenación de unas 32 hectáreas situadas en el litoral Metropolitano de Barcelona, ​​en la franja que queda entre la vía del ferrocarril y el mar y desde la desembocadura del río 
+
+Besòs
+
+ en Sant Adrià hasta el final del espacio de las Tres 
+
+Xemeneies
+
+. 
+
+Y
+
+ por otro lado, transformar mediante directrices urbanísticas, un mayor ámbito de aproximadamente 92 hectáreas donde se encuentran actualmente almacenes y áreas industriales.
+
+FUENTES:
+
+https://150elements.mnactec.cat/es/company/las-tres-chimeneas/
+
+https://barcelonasecreta.com/tres-chimeneas-sant-adria/
+
+https://cronicaglobal.elespanol.com/creacion/20241006/las-tres-chimeneas-pasado-presente-infraestructura-iconica/891160926_0.html
+
+https://barcelonamemory.com/las-tres-chimeneas-de-sant-adria
+
+https://www.lavanguardia.com/local/barcelones-nord/20171108/432679208851/tres-chimeneas-on-off-documental-contaminacion.html
+
+https://www.lavanguardia.com/local/barcelones-nord/20160927/41617631211/sant-adria-besos-declara-tres-chimeneas-bien-cultural-interes-local.html
+
+https://www.elperiodico.com/es/barcelona/20150607/el-pasado-y-el-futuro-de-la-termica-del-besos-4253914
+
+https://150elements.mnactec.cat/es/company/las-tres-chimeneas/
+
+https://patrimonicultural.diba.cat/element/les-tres-xemeneies-i-edifici-de-turbines-de-la-central-termica-del-besos
+
+https://elpais.com/diario/2008/11/24/catalunya/1227492457_850215.html
+
+https://elpais.com/diario/2008/11/18/catalunya/1226974060_850215.html
+
+https://patrindustrialquitectonico.blogspot.com/2012/02/propuesta-para-declarar-bien-cultural.html
+
+https://naciodigital.cat/societat/sant-adria-declara-les-tres-xemeneies-com-a-be-cultural-dinteres-local.html
+
+https://www.ejeprime.com/empresa/endesa-y-metrovacesa-de-la-mano-para-urbanizar-la-central-termica-de-sant-adria-de-besos
+
+https://www.ajuntamentimpulsa.cat/es/badalona-sant-adria-de-besos-metrovacesa-y-endesa-firman-el-convenio-que-permitira-el-derribo-del-actual-muro-y-la-ampliacion-de-la-calle-eduard-maristany.aspx
+
+https://www.domusweb.it/en/news/gallery/2025/03/31/barcellona-brutalist-power-plant-regeneration.amp.html
+
+https://www.barrimina.cat/cast/index.php/noticias-mainmenu-55/1288-manifiesta-15-las-tres-chimeneas-son-un-espacio-de-transformacion-y-memoria
+
+https://irbarcelona.org/sala-montjuic-three-chimneys-open-air-cinema-sant-adria-besos
