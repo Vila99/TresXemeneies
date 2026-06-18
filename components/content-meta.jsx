@@ -22,6 +22,7 @@ export const UI = {
     close: "Tancar",
     langGroup: "Selector d'idioma",
     pagerLabel: "Navegació entre capítols",
+    mapLink: "Veure al mapa",
     a11y: { title: "Declaració d'accessibilitat" },
   },
   es: {
@@ -45,6 +46,7 @@ export const UI = {
     close: "Cerrar",
     langGroup: "Selector de idioma",
     pagerLabel: "Navegación entre capítulos",
+    mapLink: "Ver en el mapa",
     a11y: { title: "Declaración de accesibilidad" },
   },
   en: {
@@ -68,6 +70,7 @@ export const UI = {
     close: "Close",
     langGroup: "Language selector",
     pagerLabel: "Chapter navigation",
+    mapLink: "View on map",
     a11y: { title: "Accessibility statement" },
   },
 };

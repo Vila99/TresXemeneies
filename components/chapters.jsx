@@ -1,19 +1,7 @@
 'use client';
 
-// chapters.jsx — Contingut del microsite Tres Xemeneies en CA / ES / EN
-// Estructura data-driven: cada capítol és un array de "blocs" amb tres versions lingüístiques.
-//
-// Sintaxi inline de format en els textos:
 //   **negreta**, *itàlica*
 //   *m_dash_* es renderitza com "—"
-//
-// Tipus de bloc:
-//   {kind:"section", t:{ca,es,en}}
-//   {kind:"p", lead?:bool, t:{ca,es,en}}
-//   {kind:"figure", src, num, year?, ratio?, desc:{ca,es,en}, source:{ca,es,en}}
-//   {kind:"fact", t:{ca,es,en}}
-//   {kind:"quote", t:{ca,es,en}, cite:{ca,es,en}}
-//   {kind:"stats", head:{ca,es,en}, items:[{num, unit?, label:{ca,es,en}, desc?:{ca,es,en}}]}
 
 import { Fragment, useRef, useEffect } from 'react';
 

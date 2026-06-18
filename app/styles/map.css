@@ -1,0 +1,419 @@
+/* map.css — Mapa del recorregut · Tres Xemeneies
+   Reutilitza les variables i el llenguatge visual de styles.css.
+   Mòbil · una sola columna · acent càlid per al punt actiu.
+*/
+
+:root {
+  --warm: #a85428;        /* terracotta — "Ets aquí" (punt d'arribada) */
+  --warm-soft: rgba(168, 84, 40, 0.12);
+  --warm-ring: rgba(168, 84, 40, 0.28);
+  --sel: #5d7d52;         /* verd salvia poc saturat — punt seleccionat */
+  --sel-soft: rgba(93, 125, 82, 0.12);
+  --sel-ring: rgba(93, 125, 82, 0.30);
+  --plan-line: #19323e;
+  --plan-fill: #faf8f3;
+  --plan-bay: #eef2f3;
+}
+
+/* Centrat mòbil sobre paper */
+.map-page {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: var(--paper);
+  min-height: 100%;
+  position: relative;
+}
+
+/* ============================================================
+   HERO compacte
+   ============================================================ */
+.map-hero {
+  padding: 26px var(--pad) 18px;
+}
+.map-hero .eyebrow {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--slate-600);
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+.map-hero h1 {
+  font-size: 44px;
+  font-weight: 300;
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+  color: var(--slate-600);
+}
+.map-hero h1 em {
+  display: block;
+  font-style: italic;
+  font-weight: 900;
+  color: var(--slate-900);
+  letter-spacing: -0.045em;
+}
+.map-hero .deck {
+  margin-top: 18px;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 300;
+  color: var(--slate-800);
+  max-width: 34ch;
+}
+
+/* ============================================================
+   SEGMENTED CONTROL — selector de planta
+   ============================================================ */
+.floor-switch {
+  padding: 8px var(--pad) 0;
+}
+.floor-switch .lbl {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--slate-400);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.seg {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 1px solid var(--slate-800);
+  background: var(--paper);
+}
+.seg-btn {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  border: none;
+  border-right: 1px solid var(--slate-800);
+  padding: 13px 4px;
+  min-height: 48px;
+  cursor: pointer;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--slate-700);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  line-height: 1.1;
+  transition: background 0.16s ease, color 0.16s ease;
+}
+.seg-btn:last-child { border-right: none; }
+.seg-btn .ord { font-size: 11px; }
+.seg-btn .cnt {
+  font-size: 9px;
+  letter-spacing: 0.14em;
+  color: var(--slate-400);
+  font-weight: 700;
+}
+.seg-btn.on {
+  background: var(--slate-800);
+  color: var(--paper);
+}
+.seg-btn.on .cnt { color: var(--slate-300); }
+.seg-btn:not(.on):active { background: var(--paper-warm); }
+
+/* Caption sota el control */
+.floor-cap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px var(--pad) 4px;
+}
+.floor-cap .bullet {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: var(--warm); flex-shrink: 0;
+}
+.floor-cap .line { flex: 1; height: 1px; background: var(--slate-800); }
+.floor-cap .label {
+  font-family: var(--mono); font-size: 10px;
+  letter-spacing: 0.2em; text-transform: uppercase;
+  font-weight: 700; color: var(--slate-800);
+}
+
+/* ============================================================
+   PLÀNOL (full-bleed)
+   ============================================================ */
+.map-stage {
+  position: relative;
+  margin: 6px 0 10px;
+  padding: 8px var(--pad) 4px;
+}
+.map-frame {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  border: 1px solid var(--line);
+}
+.map-frame .plan-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* Marcadors numerats sobre el plànol */
+.map-marker {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 34px; height: 34px;
+  border-radius: 50%;
+  background: var(--slate-800);
+  color: var(--paper);
+  border: 2.5px solid var(--paper);
+  font-family: var(--mono);
+  font-weight: 700;
+  font-size: 14px;
+  display: grid; place-items: center;
+  cursor: pointer;
+  box-shadow: 0 2px 7px rgba(15, 36, 46, 0.4);
+  -webkit-appearance: none; appearance: none;
+  z-index: 3;
+  transition: background 0.18s ease, transform 0.18s ease, box-shadow 0.18s ease;
+}
+.map-marker::after {
+  content: ""; position: absolute; inset: -7px; border-radius: 50%;
+}
+.map-marker:active { transform: translate(-50%, -50%) scale(0.94); }
+.map-marker.active {
+  background: var(--sel);
+  transform: translate(-50%, -50%) scale(1.16);
+  box-shadow: 0 0 0 5px var(--sel-ring), 0 4px 12px rgba(15, 36, 46, 0.4);
+  z-index: 4;
+}
+.map-marker:focus-visible {
+  outline: 3px solid #ffb13b;
+  outline-offset: 3px;
+}
+
+/* Marcador d'arribada — “Ets aquí” */
+.map-marker.here {
+  background: var(--warm);
+  box-shadow: 0 0 0 5px var(--warm-ring), 0 4px 12px rgba(15, 36, 46, 0.42);
+  z-index: 5;
+}
+/* Si el punt d'arribada es selecciona, mana el verd de seleccionat */
+.map-marker.here.active {
+  background: var(--sel);
+  box-shadow: 0 0 0 5px var(--sel-ring), 0 4px 12px rgba(15, 36, 46, 0.42);
+}
+.map-marker .here-tag {
+  position: absolute;
+  bottom: calc(100% + 9px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--warm);
+  color: #fff;
+  font-family: var(--mono);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  padding: 4px 8px;
+  border-radius: 100px;
+  box-shadow: 0 2px 6px rgba(15, 36, 46, 0.3);
+  pointer-events: none;
+}
+.map-marker .here-tag::after {
+  content: "";
+  position: absolute;
+  top: 100%; left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid transparent;
+  border-top-color: var(--warm);
+}
+
+/* Pulse subtil per indicar que es pot tocar */
+.map-marker .pulse {
+  position: absolute; inset: -2px; border-radius: 50%;
+  border: 2.5px solid var(--warm);
+  opacity: 0;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .map-marker:not(.active) .pulse {
+    animation: mk-pulse 2.8s ease-out infinite;
+  }
+}
+
+/* Avis d'arribada des d'un capítol */
+.map-arrival {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin: 0 var(--pad) 4px;
+  padding: 12px 14px;
+  background: var(--warm-soft);
+  border-left: 3px solid var(--warm);
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--slate-800);
+}
+.map-arrival .pin {
+  flex-shrink: 0;
+  font-family: var(--mono);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--warm);
+}
+
+/* Llegenda sota el plànol */
+.map-legend {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 2px var(--pad) 48px;
+  flex-wrap: wrap;
+}
+.map-legend .item {
+  display: flex; align-items: center; gap: 8px;
+  font-family: var(--mono); font-size: 10px;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--slate-600); font-weight: 700;
+}
+.map-legend .dot {
+  width: 14px; height: 14px; border-radius: 50%;
+  border: 2px solid var(--paper);
+  box-shadow: 0 1px 3px rgba(15,36,46,0.3);
+}
+.map-legend .dot.slate { background: var(--slate-800); }
+.map-legend .dot.warm  { background: var(--sel); }
+.map-legend .dot.here  { background: var(--warm); box-shadow: 0 0 0 3px var(--warm-ring); }
+.map-legend .lg-ic { flex-shrink: 0; }
+
+@keyframes mk-pulse {
+  0%   { transform: scale(1);   opacity: 0.0; }
+  14%  { opacity: 0.6; }
+  70%  { transform: scale(2);   opacity: 0; }
+  100% { transform: scale(2);   opacity: 0; }
+}
+
+/* ============================================================
+   BOTTOM SHEET — popup del punt
+   ============================================================ */
+.sheet-scrim {
+  position: fixed; inset: 0;
+  background: rgba(15, 36, 46, 0.5);
+  z-index: 80;
+  animation: scrim-in 0.2s ease;
+}
+@keyframes scrim-in { from { opacity: 0; } to { opacity: 1; } }
+
+.sheet {
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 430px;
+  background: var(--paper);
+  z-index: 90;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  box-shadow: 0 -12px 44px rgba(15, 36, 46, 0.32);
+  padding: 10px 0 calc(20px + env(safe-area-inset-bottom, 0px));
+  max-height: 88%;
+  overflow-y: auto;
+  animation: sheet-up 0.26s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+@keyframes sheet-up {
+  from { transform: translate(-50%, 100%); }
+  to   { transform: translate(-50%, 0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .sheet, .sheet-scrim { animation: none; }
+}
+.sheet-grab {
+  width: 42px; height: 5px; border-radius: 100px;
+  background: var(--slate-300);
+  margin: 0 auto 14px;
+}
+.sheet-head {
+  display: flex; align-items: flex-start; justify-content: space-between;
+  gap: 12px;
+  padding: 0 var(--pad) 12px;
+}
+.sheet-eyebrow {
+  display: flex; align-items: center; gap: 10px;
+  font-family: var(--mono); font-size: 11px;
+  letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--slate-600); font-weight: 700;
+  padding-top: 4px;
+}
+.sheet-eyebrow .ix {
+  width: 28px; height: 28px; border-radius: 50%;
+  background: var(--sel); color: var(--paper);
+  display: grid; place-items: center;
+  font-size: 13px; flex-shrink: 0;
+}
+.sheet-close {
+  width: 40px; height: 40px; border-radius: 50%;
+  border: none; background: var(--paper-warm);
+  color: var(--slate-800);
+  display: grid; place-items: center;
+  cursor: pointer; flex-shrink: 0;
+  -webkit-appearance: none; appearance: none;
+}
+.sheet-close:active { background: var(--line); }
+.sheet-fig {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  background-color: var(--slate-800);
+  background-size: cover;
+  background-position: center;
+}
+.sheet-body {
+  padding: 18px var(--pad) 0;
+}
+.sheet-body h2 {
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 0.98;
+  letter-spacing: -0.035em;
+  color: var(--slate-600);
+}
+.sheet-body h2 em {
+  font-style: italic;
+  font-weight: 900;
+  color: var(--slate-900);
+}
+.sheet-body .deck {
+  margin-top: 12px;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--slate-900);
+}
+.sheet-body .deck strong { font-weight: 700; }
+.sheet-body .deck em { font-style: italic; }
+
+.sheet-cta {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 14px;
+  margin: 22px var(--pad) 0;
+  padding: 16px 18px;
+  background: var(--slate-900);
+  color: var(--paper);
+  text-decoration: none;
+  min-height: 56px;
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+}
+.sheet-cta:active { background: var(--slate-800); }
+.sheet-cta:focus-visible { outline: 3px solid #ffb13b; outline-offset: 3px; }
+.sheet-cta svg { flex-shrink: 0; }

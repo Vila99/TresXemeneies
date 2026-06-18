@@ -1,15 +1,21 @@
 'use client';
 
-import { useState, useEffect, useRef, useCallback } from 'react';
+// app.jsx — Tres Xemeneies · Microsite del Consorci del Besòs
+// Hash routing entre Landing + 7 capítols · CA/ES/EN
+// Mobile-first · Adaptat a la Llei Europea d'Accessibilitat (WCAG 2.1 AA)
 
-import { CHAPTERS } from '@/components/content-meta';
-import { UI } from '@/components/content-meta';
-import { renderChapter } from '@/components/chapters';
+import { useState, useEffect, useRef, useCallback } from 'react';
+import { CHAPTERS, UI } from '@/components/content-meta';
 import {
-  ARTICLE_ORIGENS, ARTICLE_PRODUCCIO, ARTICLE_TANCAMENT,
-  ARTICLE_REIVINDICACIO, ARTICLE_FUTUR, ARTICLE_NAU_TURBINES,
+  ARTICLE_ORIGENS,
+  ARTICLE_PRODUCCIO,
+  ARTICLE_TANCAMENT,
+  ARTICLE_REIVINDICACIO,
+  ARTICLE_FUTUR,
+  ARTICLE_NAU_TURBINES,
   ARTICLE_MEMORIA,
 } from '@/components/articles';
+import { renderChapter } from '@/components/chapters';
 import ConsorciFooter from '@/components/footer';
 
 /* ═══════════════════════════════════════════════════════════════
@@ -119,12 +125,18 @@ function LangBar({ lang, setLang, ui }) {
 /* ═══════════════════════════════════════════════════════════════
    Chapter Hero
    ═══════════════════════════════════════════════════════════════ */
-function ChapterHero({ chapter, lang }) {
+function ChapterHero({ chapter, lang, ui }) {
   const title = chapter.title[lang];
   return (
     <header className="hero">
       <h1>{title.main}<br /><em>{title.em}</em></h1>
       <p className="deck">{renderInline(chapter.deck[lang])}</p>
+      <a className="hero-maplink" href={`/mapa?from=${chapter.slug}`}>
+        <span className="pin" aria-hidden="true">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"><path d="M12 21s-7-6.3-7-11a7 7 0 0 1 14 0c0 4.7-7 11-7 11z" /><circle cx="12" cy="10" r="2.4" /></svg>
+        </span>
+        <span>{ui.mapLink}</span>
+      </a>
     </header>
   );
 }
