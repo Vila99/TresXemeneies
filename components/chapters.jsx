@@ -4,6 +4,7 @@
 //   *m_dash_* es renderitza com "—"
 
 import { Fragment, useRef, useEffect } from 'react';
+import Image from 'next/image';
 
 /* ─────────── Markdown-lite inline parser ─────────── */
 function renderInline(text) {
@@ -43,15 +44,27 @@ function Para({ text, lead }) {
   return <p className={lead ? "lead" : ""}>{renderInline(text)}</p>;
 }
 
+// `<video poster>` no accepta <Image>, així que fem passar el pòster pel mateix
+// optimitzador via URL: estalvia ~85 % en un fitxer que només es veu un instant.
+function optimized(src, w = 828, q = 70) {
+  return `/_next/image?url=${encodeURIComponent(src)}&w=${w}&q=${q}`;
+}
+
 function Fig({ src, num, year, ratio, desc, source, video, poster }) {
   const altText = typeof desc === "string" ? desc : "";
   const isVideo = !!video;
   const videoRef = useRef(null);
   useEffect(() => {
     if (videoRef.current) {
-      videoRef.current.muted = true;
-      videoRef.current.defaultMuted = true;
-      videoRef.current.volume = 0;
+      const v = videoRef.current;
+      v.muted = true;
+      v.defaultMuted = true;
+      v.volume = 0;
+      v.removeAttribute("controls");
+      const play = () => { const p = v.play(); if (p && p.catch) p.catch(() => {}); };
+      play();
+      v.addEventListener("pause", play);
+      return () => v.removeEventListener("pause", play);
     }
   }, []);
   return (
@@ -61,22 +74,28 @@ function Fig({ src, num, year, ratio, desc, source, video, poster }) {
           ref={videoRef}
           className={"img " + (ratio || "")}
           src={video}
-          poster={poster || undefined}
+          poster={poster ? optimized(poster) : undefined}
           autoPlay
           muted
           loop
           playsInline
+          controls={false}
+          disablePictureInPicture
+          disableRemotePlayback
+          tabIndex={-1}
           preload="metadata"
           aria-label={altText}
         >
           <p>{altText}</p>
         </video>
       ) : (
-        <div
-          className={"img " + (ratio || "")}
-          role="img"
-          aria-label={altText}
-          style={{ backgroundImage: `url('${src}')` }}>
+        <div className={"img " + (ratio || "")}>
+          <Image
+            src={src || poster}
+            alt={altText}
+            fill
+            sizes="(max-width: 1200px) 100vw, 1200px"
+          />
         </div>
       )}
       <figcaption>
@@ -127,6 +146,23 @@ function StatsBlock({ head, items, lang }) {
   );
 }
 
+function ListBlock({ head, items, lang }) {
+  const tr = (v) => (typeof v === "string" ? v : v ? v[lang] : "");
+  return (
+    <div className="dlist">
+      {head && <div className="head">{head}</div>}
+      <ul>
+        {items.map((it, i) => (
+          <li key={i}>
+            {it.k && <span className="k">{tr(it.k)}</span>}
+            <span className="v">{renderInline(tr(it.t))}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
 /* ─────────── Block dispatcher ─────────── */
 function Block({ block, lang }) {
   const tr = (obj) => obj ? obj[lang] : "";
@@ -158,6 +194,8 @@ function Block({ block, lang }) {
       return <QuoteBlock text={tr(block.t)} cite={tr(block.cite)} />;
     case "stats":
       return <div className="body"><StatsBlock head={tr(block.head)} items={block.items} lang={lang} /></div>;
+    case "list":
+      return <div className="body"><ListBlock head={tr(block.head)} items={block.items} lang={lang} /></div>;
     default:
       return null;
   }

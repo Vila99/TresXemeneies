@@ -145,13 +145,14 @@
 .map-stage {
   position: relative;
   margin: 6px 0 10px;
-  padding: 8px var(--pad) 4px;
+  padding: 30px 0;
+  background: var(--paper);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
 }
 .map-frame {
   position: relative;
   width: 100%;
-  background: #fff;
-  border: 1px solid var(--line);
 }
 .map-frame .plan-img {
   display: block;
@@ -367,11 +368,15 @@
 }
 .sheet-close:active { background: var(--line); }
 .sheet-fig {
+  position: relative;      /* contenidor de <Image fill> */
+  overflow: hidden;
   width: 100%;
   aspect-ratio: 16 / 10;
   background-color: var(--slate-800);
-  background-size: cover;
-  background-position: center;
+}
+.sheet-fig > img {
+  object-fit: cover;
+  object-position: center;
 }
 .sheet-body {
   padding: 18px var(--pad) 0;
@@ -417,3 +422,39 @@
 .sheet-cta:active { background: var(--slate-800); }
 .sheet-cta:focus-visible { outline: 3px solid #ffb13b; outline-offset: 3px; }
 .sheet-cta svg { flex-shrink: 0; }
+
+
+/* ============================================================
+   ZONA D'INFLUÈNCIA DE CADA PUNT
+   ============================================================ */
+.map-zone{position:absolute;transform:translate(-50%,-50%);width:92px;height:92px;border-radius:50%;pointer-events:none;z-index:2;background:radial-gradient(circle,rgba(25,50,62,0.13) 0%,rgba(25,50,62,0.07) 52%,rgba(25,50,62,0) 72%);transition:background 0.22s ease,width 0.22s ease,height 0.22s ease}
+.map-zone.active{width:112px;height:112px;background:radial-gradient(circle,var(--sel-soft) 0%,rgba(93,125,82,0.10) 52%,rgba(93,125,82,0) 72%)}
+.map-zone.here{background:radial-gradient(circle,var(--warm-soft) 0%,rgba(168,84,40,0.09) 52%,rgba(168,84,40,0) 72%)}
+
+/* Fosa en canviar de planta */
+.map-frame{animation:planIn 0.34s ease both}
+@keyframes planIn{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.map-frame{animation:none}}
+
+/* ============================================================
+   LLISTA DELS PUNTS DE LA PLANTA
+   ============================================================ */
+.point-list{padding:22px var(--pad) 8px}
+.pl-lbl{margin:0 0 12px;font-family:var(--mono);font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--slate-600)}
+.point-list ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+.pl-row{display:flex;align-items:center;gap:14px;width:100%;min-height:64px;padding:14px 4px;border:none;border-bottom:1px solid var(--line);background:transparent;font-family:inherit;text-align:left;cursor:pointer;-webkit-appearance:none;appearance:none;transition:background 0.16s ease,padding-left 0.16s ease}
+.point-list li:last-child .pl-row{border-bottom:none}
+.pl-row:active{background:var(--paper-warm)}
+.pl-row:focus-visible{outline:3px solid #ffb13b;outline-offset:2px}
+.pl-n{flex-shrink:0;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:var(--slate-800);color:var(--paper);font-family:var(--mono);font-size:12px;font-weight:700;transition:background 0.16s ease}
+.pl-tx{display:flex;flex-direction:column;gap:3px;min-width:0;flex:1}
+.pl-t{font-size:16px;font-weight:300;color:var(--slate-900);letter-spacing:-0.01em;line-height:1.25}
+.pl-t em{font-style:italic;font-weight:700}
+.pl-m{font-family:var(--mono);font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--slate-600)}
+.pl-go{flex-shrink:0;color:var(--slate-600);display:grid;place-items:center;transition:transform 0.16s ease,color 0.16s ease}
+.pl-row:active .pl-go{transform:translateX(3px)}
+.pl-row.active{background:var(--sel-soft);padding-left:10px}
+.pl-row.active .pl-n{background:var(--sel)}
+.pl-row.active .pl-go{color:var(--sel)}
+.pl-row.here .pl-n{background:var(--warm)}
+.pl-row.here .pl-m{color:var(--warm)}

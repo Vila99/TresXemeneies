@@ -1,18 +1,20 @@
 'use client';
 
 // app.jsx — Tres Xemeneies · Microsite del Consorci del Besòs
-// Hash routing entre Landing + 7 capítols · CA/ES/EN
+// Hash routing entre Landing + 8 capítols · CA/ES/EN
 // Mobile-first · Adaptat a la Llei Europea d'Accessibilitat (WCAG 2.1 AA)
 
 import { useState, useEffect, useRef, useCallback } from 'react';
+import Image from 'next/image';
 import { CHAPTERS, UI } from '@/components/content-meta';
 import {
+  ARTICLE_ICONA,
   ARTICLE_ORIGENS,
-  ARTICLE_PRODUCCIO,
-  ARTICLE_TANCAMENT,
-  ARTICLE_REIVINDICACIO,
-  ARTICLE_FUTUR,
-  ARTICLE_NAU_TURBINES,
+  ARTICLE_GUERRES,
+  ARTICLE_BRUTALISME,
+  ARTICLE_LLUITA,
+  ARTICLE_PDU,
+  ARTICLE_MEDIA_CITY,
   ARTICLE_MEMORIA,
 } from '@/components/articles';
 import { renderChapter } from '@/components/chapters';
@@ -34,13 +36,14 @@ const Icon = {
    Mapping article slug → blocks
    ═══════════════════════════════════════════════════════════════ */
 const ARTICLE_MAP = {
-  origens:        ARTICLE_ORIGENS,
-  produccio:      ARTICLE_PRODUCCIO,
-  tancament:      ARTICLE_TANCAMENT,
-  reivindicacio:  ARTICLE_REIVINDICACIO,
-  futur:          ARTICLE_FUTUR,
-  'nau-turbines': ARTICLE_NAU_TURBINES,
-  memoria:        ARTICLE_MEMORIA,
+  icona:        ARTICLE_ICONA,
+  origens:      ARTICLE_ORIGENS,
+  guerres:      ARTICLE_GUERRES,
+  brutalisme:   ARTICLE_BRUTALISME,
+  lluita:       ARTICLE_LLUITA,
+  pdu:          ARTICLE_PDU,
+  'media-city': ARTICLE_MEDIA_CITY,
+  memoria:      ARTICLE_MEMORIA,
 };
 
 function articleFor(slug) {
@@ -204,8 +207,8 @@ const LANDING_COPY = {
   ca: {
     eyebrow: 'Microsite',
     title: { main: 'Tres', em: 'Xemeneies' },
-    deck: "Un segle de producció elèctrica i de mobilització veïnal al marge esquerre del Besòs. Set capítols sobre el passat, present i futur d'un dels patrimonis industrials més emblemàtics de Catalunya.",
-    chapters: 'Els set capítols',
+    deck: "Un segle de producció elèctrica i de mobilització veïnal al marge esquerre del Besòs. Vuit capítols sobre el passat, present i futur d'un dels patrimonis industrials més emblemàtics de Catalunya.",
+    chapters: 'Els vuit capítols',
     promoter: 'Promotor',
     languages: 'Idiomes',
     location: 'Ubicació',
@@ -215,8 +218,8 @@ const LANDING_COPY = {
   es: {
     eyebrow: 'Microsite',
     title: { main: 'Tres', em: 'Chimeneas' },
-    deck: 'Un siglo de producción eléctrica y de movilización vecinal en el margen izquierdo del Besòs. Siete capítulos sobre el pasado, presente y futuro de uno de los patrimonios industriales más emblemáticos de Cataluña.',
-    chapters: 'Los siete capítulos',
+    deck: 'Un siglo de producción eléctrica y de movilización vecinal en el margen izquierdo del Besòs. Ocho capítulos sobre el pasado, presente y futuro de uno de los patrimonios industriales más emblemáticos de Cataluña.',
+    chapters: 'Los ocho capítulos',
     promoter: 'Promotor',
     languages: 'Idiomas',
     location: 'Ubicación',
@@ -226,8 +229,8 @@ const LANDING_COPY = {
   en: {
     eyebrow: 'Microsite',
     title: { main: 'Three', em: 'Chimneys' },
-    deck: "A century of electrical production and citizen mobilization on the left bank of the Besòs. Seven chapters on the past, present and future of one of Catalonia's most emblematic industrial heritage sites.",
-    chapters: 'The seven chapters',
+    deck: "A century of electrical production and citizen mobilization on the left bank of the Besòs. Eight chapters on the past, present and future of one of Catalonia's most emblematic industrial heritage sites.",
+    chapters: 'The eight chapters',
     promoter: 'Promoted by',
     languages: 'Languages',
     location: 'Location',
@@ -244,12 +247,15 @@ function Landing({ lang, ui }) {
   return (
     <article className="landing" aria-labelledby="landing-title">
       <header className="landing-hero">
-        <div
-          className="landing-bg"
-          role="img"
-          aria-label={L.title.main + ' ' + L.title.em + ' — Sant Adrià de Besòs'}
-          style={{ backgroundImage: "url('assets/render-pdu-aeria.jpg')" }}
-        ></div>
+        <div className="landing-bg">
+          <Image
+            src="/assets/renders/render-pdu-aeria.jpg"
+            alt={L.title.main + ' ' + L.title.em + ' — Sant Adrià de Besòs'}
+            fill
+            priority
+            sizes="(max-width: 1200px) 100vw, 1200px"
+          />
+        </div>
         <div className="landing-overlay" aria-hidden="true"></div>
         <div className="landing-content">
           <p className="landing-eyebrow">{ui.site}</p>

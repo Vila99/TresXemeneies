@@ -1,11 +1,12 @@
 'use client';
 
 // map.jsx — Mapa del recorregut · Tres Xemeneies
-// Plànol simplificat (SVG) de 3 plantes amb 7 punts clicables → capítols del microsite.
+// Plànol simplificat (SVG) de 3 plantes amb 8 punts clicables → capítols del microsite.
 // Reutilitza CHAPTERS i UI de content-meta.jsx · CA / ES / EN · mòbil.
 
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { useRouter } from 'next/navigation';
+import Image from 'next/image';
 import { CHAPTERS, UI } from '@/components/content-meta';
 import ConsorciFooter from '@/components/footer';
 import '@/app/styles/map.css';
@@ -39,10 +40,11 @@ const MAP_UI = {
   ca: {
     eyebrow: 'Microsite · Mapa',
     title: { main: 'El mapa del', em: 'recorregut' },
-    deck: 'Set punts repartits en **tres plantes**. Toca un punt numerat per descobrir-ne el contingut.',
+    deck: 'Vuit punts repartits en **tres plantes**. Toca un punt numerat per descobrir-ne el contingut.',
     floorLabel: 'Planta',
-    floors: ['Primera', 'Segona', 'Tercera'],
+    floors: ['Baixa', 'Primera', 'Segona'],
     pointsWord: 'punts',
+    listLabel: "Els punts d'aquesta planta",
     cta: 'Veure el contingut',
     back: 'Tornar al microsite',
     close: 'Tancar',
@@ -58,10 +60,11 @@ const MAP_UI = {
   es: {
     eyebrow: 'Microsite · Mapa',
     title: { main: 'El mapa del', em: 'recorrido' },
-    deck: 'Siete puntos repartidos en **tres plantas**. Toca un punto numerado para descubrir su contenido.',
+    deck: 'Ocho puntos repartidos en **tres plantas**. Toca un punto numerado para descubrir su contenido.',
     floorLabel: 'Planta',
-    floors: ['Primera', 'Segunda', 'Tercera'],
+    floors: ['Baja', 'Primera', 'Segunda'],
     pointsWord: 'puntos',
+    listLabel: 'Los puntos de esta planta',
     cta: 'Ver el contenido',
     back: 'Volver al microsite',
     close: 'Cerrar',
@@ -77,10 +80,11 @@ const MAP_UI = {
   en: {
     eyebrow: 'Microsite · Map',
     title: { main: 'The tour', em: 'map' },
-    deck: 'Seven points across **three floors**. Tap a numbered point to discover its content.',
+    deck: 'Eight points across **three floors**. Tap a numbered point to discover its content.',
     floorLabel: 'Floor',
-    floors: ['First', 'Second', 'Third'],
+    floors: ['Ground', 'First', 'Second'],
     pointsWord: 'points',
+    listLabel: 'The points on this floor',
     cta: 'View content',
     back: 'Back to microsite',
     close: 'Close',
@@ -95,23 +99,25 @@ const MAP_UI = {
   },
 };
 
-/* ─────────── Els 7 punts → capítols ─────────── */
-// floor: 0 = Primera · 1 = Segona · 2 = Tercera
+/* ─────────── Els 8 punts → capítols ─────────── */
+// floor: 0 = Baixa · 1 = Primera · 2 = Segona
 const POINTS = [
-  { n: 1, slug: 'origens',       floor: 0, fx: 0.028, fy: 0.502, img: '/assets/aerea-1913.jpg' },
-  { n: 2, slug: 'produccio',     floor: 0, fx: 0.232, fy: 0.450, img: '/assets/turbines-1988.jpg' },
-  { n: 3, slug: 'tancament',     floor: 0, fx: 0.740, fy: 0.500, img: '/assets/actual-01.jpg' },
-  { n: 4, slug: 'reivindicacio', floor: 1, fx: 0.667, fy: 0.407, img: '/assets/actual-02.jpg' },
-  { n: 5, slug: 'futur',         floor: 1, fx: 0.294, fy: 0.462, img: '/assets/render-pdu-aeria.jpg' },
-  { n: 6, slug: 'nau-turbines',  floor: 2, fx: 0.416, fy: 0.531, img: '/assets/render-turbines-int.jpg' },
-  { n: 7, slug: 'memoria',       floor: 2, fx: 0.287, fy: 0.227, img: '/assets/render-turbines-ext.jpg' },
+  { n: 1, slug: 'icona',       floor: 0, fx: 0.045, fy: 0.470, img: '/assets/fotografies/actual-aeria.jpg' },
+  { n: 2, slug: 'origens',     floor: 0, fx: 0.170, fy: 0.400, img: '/assets/fotografies/aerea-1913.jpg' },
+  { n: 3, slug: 'guerres',     floor: 0, fx: 0.375, fy: 0.560, img: '/assets/fotografies/construccio-1971-b.jpg' },
+  { n: 4, slug: 'brutalisme',  floor: 1, fx: 0.170, fy: 0.420, img: '/assets/fotografies/actual-03.jpg' },
+  { n: 5, slug: 'lluita',      floor: 1, fx: 0.520, fy: 0.360, img: '/assets/fotografies/actual-05.jpg' },
+  { n: 6, slug: 'pdu',         floor: 1, fx: 0.850, fy: 0.460, img: '/assets/renders/render-pdu-aeria.jpg' },
+  { n: 7, slug: 'media-city',  floor: 2, fx: 0.220, fy: 0.470, img: '/assets/renders/render-turbines-int.jpg' },
+  { n: 8, slug: 'memoria',     floor: 2, fx: 0.470, fy: 0.600, img: '/assets/fotografies/mp-1.jpg' },
 ];
 
-// Plànols
+// Plànols oficials (fulls EA-100 / EA-101) redibuixats com a mapa de visitant:
+// massa sòlida de l'edifici + estructura, fora cotes, ratllats i línia auxiliar.
 const FLOOR_IMG = [
-  '/assets/plan-clean-1.png',
-  '/assets/plan-clean-2.png',
-  '/assets/plan-clean-3.png',
+  '/assets/planols/plan-viz-pb.png',
+  '/assets/planols/plan-viz-p1.png',
+  '/assets/planols/plan-viz-p2.png',
 ];
 
 function chapterFor(slug) {
@@ -129,13 +135,70 @@ function pointFromSearch(searchParams) {
 /* ─────────── Plànol de la planta ─────────── */
 function FloorPlan({ floor, alt }) {
   return (
-    <img className="plan-img" src={FLOOR_IMG[floor]} alt={alt} draggable="false" />
+    <Image
+      className="plan-img"
+      src={FLOOR_IMG[floor]}
+      alt={alt}
+      width={1400}
+      height={328}
+      sizes="(max-width: 1200px) 100vw, 1200px"
+      priority
+      draggable="false"
+    />
+  );
+}
+
+/* ─────────── Zona d'influència de cada punt ─────────── */
+function Zones({ pts, selected, here }) {
+  return pts.map((p) => {
+    const isActive = selected && selected.n === p.n;
+    const isHere = here && here.n === p.n;
+    return (
+      <span key={p.n} aria-hidden="true"
+        className={'map-zone' + (isActive ? ' active' : '') + (isHere ? ' here' : '')}
+        style={{ left: `${p.fx * 100}%`, top: `${p.fy * 100}%` }} />
+    );
+  });
+}
+
+/* ─────────── Llista dels punts de la planta ─────────── */
+function PointList({ pts, selected, here, onSelect, lang, t }) {
+  return (
+    <div className="point-list">
+      <p className="pl-lbl">{t.listLabel}</p>
+      <ul>
+        {pts.map((p) => {
+          const ch = chapterFor(p.slug);
+          if (!ch) return null;
+          const ttl = ch.title[lang];
+          const isActive = selected && selected.n === p.n;
+          const isHere = here && here.n === p.n;
+          const per = ch.meta.period.v;
+          const perV = typeof per === 'string' ? per : per[lang];
+          const perL = ch.meta.period.label[lang];
+          const perTx = /^(període|período|period)$/i.test(perL) ? perV : perL + ' · ' + perV;
+          return (
+            <li key={p.n}>
+              <button type="button"
+                className={'pl-row' + (isActive ? ' active' : '') + (isHere ? ' here' : '')}
+                onClick={() => onSelect(p)}>
+                <span className="pl-n">{p.n}</span>
+                <span className="pl-tx">
+                  <span className="pl-t">{ttl.main} <em>{ttl.em}</em></span>
+                  <span className="pl-m">{perTx}{isHere ? ' · ' + t.youAreHere : ''}</span>
+                </span>
+                <span className="pl-go" aria-hidden="true">{MIcon.arrR}</span>
+              </button>
+            </li>
+          );
+        })}
+      </ul>
+    </div>
   );
 }
 
 /* ─────────── Marcadors clicables sobre el plànol ─────────── */
-function Markers({ floor, selected, here, onSelect, lang }) {
-  const pts = POINTS.filter((p) => p.floor === floor);
+function Markers({ pts, selected, here, onSelect, lang }) {
   return pts.map((p) => {
     const ch = chapterFor(p.slug);
     const isActive = selected && selected.n === p.n;
@@ -200,9 +263,9 @@ function PointSheet({ point, lang, onClose }) {
             {MIcon.close}
           </button>
         </div>
-        <div className="sheet-fig" role="img"
-          aria-label={plain(title)}
-          style={{ backgroundImage: `url('${point.img}')` }}></div>
+        <div className="sheet-fig">
+          <Image src={point.img} alt={plain(title)} fill sizes="(max-width: 430px) 100vw, 430px" />
+        </div>
         <div className="sheet-body">
           <h2 id="sheet-title">{title.main} <em>{title.em}</em></h2>
           <p className="deck">{mapInline(ch.deck[lang])}</p>
@@ -279,6 +342,7 @@ export default function MapPage() {
 
   const t = MAP_UI[lang];
   const ui = UI[lang];
+  const floorPts = POINTS.filter((p) => p.floor === floor);
 
   const goFloor = useCallback((f) => { setFloor(f); setSelected(null); }, []);
   const countFor = (f) => POINTS.filter((p) => p.floor === f).length;
@@ -342,11 +406,14 @@ export default function MapPage() {
 
         {/* Plànol + marcadors */}
         <div className="map-stage" ref={stageRef}>
-          <div className="map-frame">
+          <div className="map-frame" key={floor}>
             <FloorPlan floor={floor} alt={`${t.floorLabel} ${t.floors[floor]}`} />
-            <Markers floor={floor} selected={selected} here={here} onSelect={setSelected} lang={lang} />
+            <Zones pts={floorPts} selected={selected} here={here} />
+            <Markers pts={floorPts} selected={selected} here={here} onSelect={setSelected} lang={lang} />
           </div>
         </div>
+
+        <PointList pts={floorPts} selected={selected} here={here} onSelect={setSelected} lang={lang} t={t} />
 
         {/* Llegenda */}
         <div className="map-legend">

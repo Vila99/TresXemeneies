@@ -333,11 +333,15 @@ button { font-family: inherit; }
   margin: 32px 0;
 }
 .figure .img {
+  position: relative;      /* contenidor de <Image fill> */
+  overflow: hidden;
   width: 100%;
   background-color: var(--slate-800);
-  background-size: cover;
-  background-position: center;
   aspect-ratio: 4/3;
+}
+.figure .img > img {
+  object-fit: cover;
+  object-position: center;
 }
 .figure .img.wide { aspect-ratio: 16/10; }
 .figure .img.tall { aspect-ratio: 4/5; }
@@ -392,8 +396,7 @@ video.img:focus-visible {
 .landing-bg {
   position: absolute;
   inset: 0;
-  background-size: cover;
-  background-position: center;
+  overflow: hidden;
   z-index: 0;
 }
 /* Video occludes the still bg when loaded */
@@ -699,6 +702,7 @@ video.img:focus-visible {
   cursor: pointer;
   text-transform: uppercase;
   position: relative;
+  -webkit-appearance: none;
   min-height: 44px;
 }
 .langbar-btn:not(:last-child)::after {
@@ -731,9 +735,12 @@ video.img:focus-visible {
 }
 .landing-bg {
   position: absolute; inset: 0;
-  background-size: cover;
-  background-position: center;
+  overflow: hidden;
   filter: contrast(1.05) saturate(0.95);
+}
+.landing-bg > img {
+  object-fit: cover;
+  object-position: center;
 }
 .landing-overlay {
   position: absolute; inset: 0;
@@ -902,6 +909,7 @@ video.img:focus-visible {
   padding: 14px 18px;
   cursor: pointer;
   min-height: 44px;
+  -webkit-appearance: none;
 }
 .a11y-link:active { background: var(--paper-warm); }
 .a11y-link svg { flex-shrink: 0; }
@@ -1031,6 +1039,7 @@ video.img:focus-visible {
   padding: 14px 22px;
   cursor: pointer;
   min-height: 44px;
+  -webkit-appearance: none;
 }
 .a11y-submit:active { background: var(--slate-800); }
 .a11y-submit:focus-visible {
@@ -1090,3 +1099,20 @@ video.img:focus-visible {
   color: var(--paper);
   letter-spacing: -0.015em;
 }
+
+/* ============================================================
+   DLIST — dades ràpides, cronologies, objectius
+   ============================================================ */
+.dlist{margin:30px 0 8px;border-top:1px solid var(--slate-800);padding-top:18px}
+.dlist .head{font-family:var(--mono);font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:var(--slate-700);margin-bottom:16px}
+.dlist ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:14px}
+.dlist li{display:flex;flex-direction:column;gap:3px;padding-left:14px;position:relative}
+.dlist li::before{content:"";position:absolute;left:0;top:9px;width:5px;height:5px;border-radius:50%;background:var(--slate-600)}
+.dlist .k{font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--slate-800)}
+.dlist .v{font-size:15px;line-height:1.55;color:var(--slate-900);font-weight:300}
+.dlist .v strong{font-weight:700}
+.dlist .v em{font-style:italic}
+
+/* Vídeos de figura: decoratius, sense controls ni interacció */
+.figure video.img{pointer-events:none}
+.figure video.img::-webkit-media-controls,.figure video.img::-webkit-media-controls-enclosure,.figure video.img::-webkit-media-controls-panel,.figure video.img::-webkit-media-controls-start-playback-button{display:none!important;opacity:0!important;-webkit-appearance:none}

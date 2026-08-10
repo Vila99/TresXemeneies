@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 // footer.jsx — Footer corporatiu del Consorci del Besòs
 // Adaptat per complir amb la Llei Europea d'Accessibilitat (EAA · WCAG 2.1 AA):
@@ -47,9 +48,11 @@ function ConsorciFooter() {
 
   return (
     <footer role="contentinfo" aria-label={t.contact} style={wrapStyle}>
-      <img
-        src="assets/consorci-logo.png"
+      <Image
+        src="/assets/consorci-logo.png"
         alt="Consorci del Besòs"
+        width={464}
+        height={101}
         style={{ height: 26, width: "auto", display: "block", margin: "0 auto 14px", filter: "brightness(0) invert(1)" }}
       />
 
