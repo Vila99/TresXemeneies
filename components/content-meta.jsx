@@ -84,9 +84,9 @@ export const CHAPTERS = [
       en: { main: "The landmark", em: "of the coast" },
     },
     deck: {
-      ca: "**Benvinguda.** Un dels monuments industrials més alts de la Mediterrània, avui el cor d'una transformació de 32 hectàrees.",
-      es: "**Bienvenida.** Uno de los monumentos industriales más altos del Mediterráneo, hoy el corazón de una transformación de 32 hectáreas.",
-      en: "**Welcome.** One of the tallest industrial monuments in the Mediterranean, today the heart of a 32-hectare transformation.",
+      ca: "Un dels monuments industrials més alts de la Mediterrània, avui el cor d'una transformació de 32 hectàrees.",
+      es: "Uno de los monumentos industriales más altos del Mediterráneo, hoy el corazón de una transformación de 32 hectáreas.",
+      en: "One of the tallest industrial monuments in the Mediterranean, today the heart of a 32-hectare transformation.",
     },
     meta: {
       period: { label: { ca: "Alçada", es: "Altura", en: "Height" },              v: "200 m" },
