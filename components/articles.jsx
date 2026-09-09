@@ -398,7 +398,7 @@ export const ARTICLE_LLUITA = [
       }},
     ],
   },
-  { kind: "figure", video: "/assets/videos/video-3cat-referendum.mp4", poster: "/assets/fotografies/poster-3cat-referendum.jpg", doc: true, num: "01", year: "2008", ratio: "wide",
+  { kind: "figure", video: "/assets/videos/video-3cat-referendum.mp4", poster: "/assets/fotografies/poster-3cat-referendum.jpg", doc: true, num: "01", year: "2008",
     desc: {
       ca: "Informatiu sobre el resultat de la consulta: **Sant Adrià del Besòs: el referèndum aprova la continuïtat de les xemeneies**.",
       es: "Informativo sobre el resultado de la consulta: **Sant Adrià del Besòs: el referéndum aprueba la continuidad de las chimeneas**.",
@@ -726,7 +726,7 @@ export const ARTICLE_MEMORIA = [
     },
     source: { ca: "Arnau Pascual Monells", es: "Arnau Pascual Monells", en: "Arnau Pascual Monells" },
   },
-  { kind: "figure", video: "/assets/videos/video-3cat-platja.mp4", poster: "/assets/fotografies/poster-3cat-platja.jpg", doc: true, num: "04", ratio: "wide",
+  { kind: "figure", video: "/assets/videos/video-3cat-platja.mp4", poster: "/assets/fotografies/poster-3cat-platja.jpg", doc: true, num: "04",
     desc: {
       ca: "Informatiu sobre l'inici de les obres d'ampliació de la platja de Sant Adrià del Besòs, al peu del recinte.",
       es: "Informativo sobre el inicio de las obras de ampliación de la playa de Sant Adrià del Besòs, al pie del recinto.",

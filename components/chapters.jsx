@@ -76,7 +76,7 @@ function Fig({ src, num, year, ratio, desc, source, video, poster, doc }) {
         doc ? (
           <video
             ref={videoRef}
-            className={"img " + (ratio || "")}
+            className={"img doc " + (ratio || "")}
             src={video}
             poster={poster ? optimized(poster) : undefined}
             controls

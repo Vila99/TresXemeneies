@@ -1113,9 +1113,13 @@ video.img:focus-visible {
 .dlist .v strong{font-weight:700}
 .dlist .v em{font-style:italic}
 
-/* Vídeos de figura: decoratius, sense controls ni interacció */
-.figure video.img{pointer-events:none}
-.figure video.img::-webkit-media-controls,.figure video.img::-webkit-media-controls-enclosure,.figure video.img::-webkit-media-controls-panel,.figure video.img::-webkit-media-controls-start-playback-button{display:none!important;opacity:0!important;-webkit-appearance:none}
+/* Vídeos de figura: decoratius, sense controls ni interacció.
+   Excepció: `.doc` — les peces documentals (3Cat) s'han de poder reproduir. */
+.figure video.img:not(.doc){pointer-events:none}
+.figure video.img:not(.doc)::-webkit-media-controls,.figure video.img:not(.doc)::-webkit-media-controls-enclosure,.figure video.img:not(.doc)::-webkit-media-controls-panel,.figure video.img:not(.doc)::-webkit-media-controls-start-playback-button{display:none!important;opacity:0!important;-webkit-appearance:none}
+
+/* Peces d'arxiu en 4:3: es veuen senceres, sense retallar els rètols. */
+.figure video.img.doc{object-fit:contain;background-color:var(--slate-900);cursor:pointer}
 
 /* ============================================================
    ENLLAÇOS EXTERNS — fons audiovisuals de tercers
