@@ -84,9 +84,9 @@ export const CHAPTERS = [
       en: { main: "The landmark", em: "of the coast" },
     },
     deck: {
-      ca: "**Benvinguda.** El monument industrial més alt de la Mediterrània, avui el cor d'una transformació de 32 hectàrees.",
-      es: "**Bienvenida.** El monumento industrial más alto del Mediterráneo, hoy el corazón de una transformación de 32 hectáreas.",
-      en: "**Welcome.** The tallest industrial monument in the Mediterranean, today the heart of a 32-hectare transformation.",
+      ca: "**Benvinguda.** Un dels monuments industrials més alts de la Mediterrània, avui el cor d'una transformació de 32 hectàrees.",
+      es: "**Bienvenida.** Uno de los monumentos industriales más altos del Mediterráneo, hoy el corazón de una transformación de 32 hectáreas.",
+      en: "**Welcome.** One of the tallest industrial monuments in the Mediterranean, today the heart of a 32-hectare transformation.",
     },
     meta: {
       period: { label: { ca: "Alçada", es: "Altura", en: "Height" },              v: "200 m" },
@@ -98,9 +98,9 @@ export const CHAPTERS = [
   {
     slug: "origens", n: "02",
     title: {
-      ca: { main: "Els", em: "Orígens" },
-      es: { main: "Los", em: "Orígenes" },
-      en: { main: "The", em: "Origins" },
+      ca: { main: "Els", em: "orígens" },
+      es: { main: "Los", em: "orígenes" },
+      en: { main: "The", em: "origins" },
     },
     deck: {
       ca: "**El bressol de l'energia.** La primera central tèrmica del Besòs i la xarxa que va unir el Pirineu amb el mar.",
@@ -141,9 +141,9 @@ export const CHAPTERS = [
       en: { main: "The brutalist", em: "era" },
     },
     deck: {
-      ca: "**Tècnica, contaminació i protesta.** Mil cinquanta megawatts i el *polsim negre* que va marcar el barri.",
-      es: "**Técnica, contaminación y protesta.** Mil cincuenta megavatios y el *polvillo negro* que marcó el barrio.",
-      en: "**Engineering, pollution and protest.** 1,050 megawatts and the *black soot* that marked the neighbourhood.",
+      ca: "**Tècnica, contaminació i protesta.** La construcció de les Tres Xemeneies, i els conflictes ambientals que van marcar el territori.",
+      es: "**Técnica, contaminación y protesta.** La construcción de las Tres Chimeneas, y los conflictos ambientales que marcaron el territorio.",
+      en: "**Engineering, pollution and protest.** The building of the Three Chimneys, and the environmental conflicts that marked the area.",
     },
     meta: {
       period: { label: { ca: "Període", es: "Período", en: "Period" },            v: "1959 — 1983" },
@@ -160,14 +160,14 @@ export const CHAPTERS = [
       en: { main: "Labour struggle", em: "and conservation" },
     },
     deck: {
-      ca: "**Un monument a la dignitat laboral.** De la mort de Manuel Fernández Márquez al 82 % del referèndum.",
-      es: "**Un monumento a la dignidad laboral.** De la muerte de Manuel Fernández Márquez al 82 % del referéndum.",
-      en: "**A monument to labour dignity.** From the death of Manuel Fernández Márquez to the referendum's 82 %.",
+      ca: "**Un monument a la dignitat laboral.** De la mort de Manuel Fernández Márquez a la consulta ciutadana de 2008.",
+      es: "**Un monumento a la dignidad laboral.** De la muerte de Manuel Fernández Márquez a la consulta ciudadana de 2008.",
+      en: "**A monument to labour dignity.** From the death of Manuel Fernández Márquez to the 2008 citizens' consultation.",
     },
     meta: {
       period: { label: { ca: "Període", es: "Período", en: "Period" },            v: "1973 — 2016" },
       read:   { label: { ca: "Lectura", es: "Lectura", en: "Read" },              v: { ca: "6 min", es: "6 min", en: "6 min" } },
-      place:  { label: { ca: "Referèndum", es: "Referéndum", en: "Referendum" },  v: { ca: "82 % a favor", es: "82 % a favor", en: "82 % in favour" } },
+      place:  { label: { ca: "Consulta 2008", es: "Consulta 2008", en: "2008 consultation" }, v: { ca: "82,2 % a favor", es: "82,2 % a favor", en: "82.2 % in favour" } },
       source: { label: { ca: "Protecció", es: "Protección", en: "Protection" },   v: "BCIL · 2016" },
     },
   },
@@ -179,9 +179,9 @@ export const CHAPTERS = [
       en: { main: "The", em: "Tres Xemeneies plan" },
     },
     deck: {
-      ca: "**Un nou model de ciutat.** 32 hectàrees, un parc de 10 ha i 1.783 habitatges al front marítim.",
-      es: "**Un nuevo modelo de ciudad.** 32 hectáreas, un parque de 10 ha y 1.783 viviendas en el frente marítimo.",
-      en: "**A new model of city.** 32 hectares, a 10-ha park and 1,783 homes on the seafront.",
+      ca: "**Un nou model de ciutat.** 32 hectàrees, un parc de 10 ha i més de 185.000 m² d'habitatge al front marítim.",
+      es: "**Un nuevo modelo de ciudad.** 32 hectáreas, un parque de 10 ha y más de 185.000 m² de vivienda en el frente marítimo.",
+      en: "**A new model of city.** 32 hectares, a 10-ha park and over 185,000 m² of housing on the seafront.",
     },
     meta: {
       period: { label: { ca: "Aprovat", es: "Aprobado", en: "Approved" },         v: "2023" },
@@ -198,9 +198,9 @@ export const CHAPTERS = [
       en: { main: "Catalunya", em: "Media City" },
     },
     deck: {
-      ca: "**El hub audiovisual del futur.** La Nau de Turbines, 22.600 m² per a la producció, els videojocs i la cultura digital.",
-      es: "**El hub audiovisual del futuro.** La Nave de Turbinas, 22.600 m² para la producción, los videojuegos y la cultura digital.",
-      en: "**The audiovisual hub of the future.** The Turbine Hall, 22,600 m² for production, gaming and digital culture.",
+      ca: "**El hub audiovisual del futur.** La Nau de Turbines, més de 40.000 m² per a la producció, els videojocs i la cultura digital.",
+      es: "**El hub audiovisual del futuro.** La Nave de Turbinas, más de 40.000 m² para la producción, los videojuegos y la cultura digital.",
+      en: "**The audiovisual hub of the future.** The Turbine Hall, over 40,000 m² for production, gaming and digital culture.",
     },
     meta: {
       period: { label: { ca: "Estat", es: "Estado", en: "Status" },               v: { ca: "En projecte", es: "En proyecto", en: "In design" } },

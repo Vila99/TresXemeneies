@@ -357,8 +357,8 @@ button { font-family: inherit; }
 }
 .figure figcaption .num,
 .figure figcaption .src {
-  font-family: var(--mono); font-size: 10px;
-  letter-spacing: 0.18em; text-transform: uppercase;
+  font-family: var(--mono); font-size: 11px;
+  letter-spacing: 0.16em; text-transform: uppercase;
   font-weight: 700;
 }
 .figure figcaption .num { color: var(--slate-700); }
@@ -456,8 +456,8 @@ video.img:focus-visible {
   flex: 1; height: 1px; background: var(--slate-800);
 }
 .section-marker .label {
-  font-family: var(--mono); font-size: 10px;
-  letter-spacing: 0.22em; text-transform: uppercase;
+  font-family: var(--mono); font-size: 12px;
+  letter-spacing: 0.18em; text-transform: uppercase;
   font-weight: 700;
   color: var(--slate-800);
 }
@@ -473,8 +473,8 @@ video.img:focus-visible {
   border-bottom: 1px solid var(--slate-800);
 }
 .stats .head {
-  font-family: var(--mono); font-size: 11px;
-  letter-spacing: 0.22em; text-transform: uppercase;
+  font-family: var(--mono); font-size: 12px;
+  letter-spacing: 0.18em; text-transform: uppercase;
   color: var(--slate-600); font-weight: 700;
   margin-bottom: 24px;
 }
@@ -499,19 +499,19 @@ video.img:focus-visible {
   display: flex; align-items: baseline; gap: 3px;
 }
 .stats .num small {
-  font-family: var(--mono); font-size: 13px;
+  font-family: var(--mono); font-size: 15px;
   font-weight: 400; color: var(--slate-600);
   letter-spacing: 0.06em;
 }
 .stats .unit {
-  font-family: var(--mono); font-size: 10px;
-  letter-spacing: 0.18em; text-transform: uppercase;
+  font-family: var(--mono); font-size: 12px;
+  letter-spacing: 0.14em; text-transform: uppercase;
   color: var(--slate-600);
   font-weight: 700;
   margin-top: 8px;
 }
 .stats .desc {
-  font-size: 12px;
+  font-size: 14px;
   color: var(--slate-700);
   line-height: 1.4;
   margin-top: 6px;
@@ -1104,15 +1104,24 @@ video.img:focus-visible {
    DLIST — dades ràpides, cronologies, objectius
    ============================================================ */
 .dlist{margin:30px 0 8px;border-top:1px solid var(--slate-800);padding-top:18px}
-.dlist .head{font-family:var(--mono);font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:var(--slate-700);margin-bottom:16px}
+.dlist .head{font-family:var(--mono);font-size:12px;letter-spacing:0.18em;text-transform:uppercase;color:var(--slate-700);margin-bottom:16px}
 .dlist ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:14px}
 .dlist li{display:flex;flex-direction:column;gap:3px;padding-left:14px;position:relative}
 .dlist li::before{content:"";position:absolute;left:0;top:9px;width:5px;height:5px;border-radius:50%;background:var(--slate-600)}
-.dlist .k{font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--slate-800)}
-.dlist .v{font-size:15px;line-height:1.55;color:var(--slate-900);font-weight:300}
+.dlist .k{font-family:var(--mono);font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--slate-800)}
+.dlist .v{font-size:16px;line-height:1.55;color:var(--slate-900);font-weight:300}
 .dlist .v strong{font-weight:700}
 .dlist .v em{font-style:italic}
 
 /* Vídeos de figura: decoratius, sense controls ni interacció */
 .figure video.img{pointer-events:none}
 .figure video.img::-webkit-media-controls,.figure video.img::-webkit-media-controls-enclosure,.figure video.img::-webkit-media-controls-panel,.figure video.img::-webkit-media-controls-start-playback-button{display:none!important;opacity:0!important;-webkit-appearance:none}
+
+/* ============================================================
+   ENLLAÇOS EXTERNS — fons audiovisuals de tercers
+   ============================================================ */
+.dlist.links li{gap:5px}
+.dlist.links a.k{display:inline-flex;align-items:baseline;gap:6px;color:var(--slate-900);text-decoration:none;border-bottom:1px solid var(--slate-600);align-self:flex-start;padding-bottom:1px}
+.dlist.links a.k:hover,.dlist.links a.k:focus-visible{color:var(--slate-700);border-bottom-color:var(--slate-900)}
+.dlist.links a.k .ext{font-size:11px;line-height:1}
+.dlist.links .m{font-family:var(--mono);font-size:11px;letter-spacing:0.1em;color:var(--slate-600)}

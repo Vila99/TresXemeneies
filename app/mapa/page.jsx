@@ -103,13 +103,15 @@ const MAP_UI = {
 // floor: 0 = Baixa · 1 = Primera · 2 = Segona
 const POINTS = [
   { n: 1, slug: 'icona',       floor: 0, fx: 0.045, fy: 0.470, img: '/assets/fotografies/actual-aeria.jpg' },
-  { n: 2, slug: 'origens',     floor: 0, fx: 0.170, fy: 0.400, img: '/assets/fotografies/aerea-1913.jpg' },
-  { n: 3, slug: 'guerres',     floor: 0, fx: 0.375, fy: 0.560, img: '/assets/fotografies/construccio-1971-b.jpg' },
-  { n: 4, slug: 'brutalisme',  floor: 1, fx: 0.170, fy: 0.420, img: '/assets/fotografies/actual-03.jpg' },
+  { n: 2, slug: 'origens',     floor: 0, fx: 0.170, fy: 0.400, img: '/assets/fotografies/central-1913-aeria.jpg' },
+  { n: 3, slug: 'guerres',     floor: 0, fx: 0.375, fy: 0.560, img: '/assets/fotografies/aerea-1913.jpg' },
+  { n: 4, slug: 'brutalisme',  floor: 1, fx: 0.170, fy: 0.420, img: '/assets/fotografies/construccio-1971.jpg' },
   { n: 5, slug: 'lluita',      floor: 1, fx: 0.520, fy: 0.360, img: '/assets/fotografies/actual-05.jpg' },
   { n: 6, slug: 'pdu',         floor: 1, fx: 0.850, fy: 0.460, img: '/assets/renders/render-pdu-aeria.jpg' },
-  { n: 7, slug: 'media-city',  floor: 2, fx: 0.220, fy: 0.470, img: '/assets/renders/render-turbines-int.jpg' },
-  { n: 8, slug: 'memoria',     floor: 2, fx: 0.470, fy: 0.600, img: '/assets/fotografies/mp-1.jpg' },
+  // El 7 i el 8 estaven intercanviats sobre el plànol: la Nau de Turbines (CMC)
+  // ocupa la crugia central i la sala de control queda a l'extrem de ponent.
+  { n: 7, slug: 'media-city',  floor: 2, fx: 0.470, fy: 0.600, img: '/assets/renders/render-turbines-int.jpg' },
+  { n: 8, slug: 'memoria',     floor: 2, fx: 0.220, fy: 0.470, img: '/assets/fotografies/memoria-sala-control.jpg' },
 ];
 
 // Plànols oficials (fulls EA-100 / EA-101) redibuixats com a mapa de visitant:

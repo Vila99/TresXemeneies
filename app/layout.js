@@ -10,7 +10,7 @@ const lato = Lato({
 
 export const metadata = {
   title: 'Tres Xemeneies · Consorci del Besòs',
-  description: 'Un segle de producció elèctrica i mobilització veïnal al marge esquerre del Besòs. Microsite del Consorci del Besòs.',
+  description: 'Un segle de producció elèctrica i mobilització veïnal a la desembocadura del Besòs. Microsite del Consorci del Besòs.',
 }
 
 export const viewport = {

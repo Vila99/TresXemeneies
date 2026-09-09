@@ -50,12 +50,15 @@ function optimized(src, w = 828, q = 70) {
   return `/_next/image?url=${encodeURIComponent(src)}&w=${w}&q=${q}`;
 }
 
-function Fig({ src, num, year, ratio, desc, source, video, poster }) {
+// `doc: true` marca les peces documentals (arxius de 3Cat, clips d'informatius):
+// porten veu i durada pròpies, així que es reprodueixen amb controls i amb so,
+// a diferència dels vídeos d'ambient, que fan loop mut.
+function Fig({ src, num, year, ratio, desc, source, video, poster, doc }) {
   const altText = typeof desc === "string" ? desc : "";
   const isVideo = !!video;
   const videoRef = useRef(null);
   useEffect(() => {
-    if (videoRef.current) {
+    if (videoRef.current && !doc) {
       const v = videoRef.current;
       v.muted = true;
       v.defaultMuted = true;
@@ -66,10 +69,24 @@ function Fig({ src, num, year, ratio, desc, source, video, poster }) {
       v.addEventListener("pause", play);
       return () => v.removeEventListener("pause", play);
     }
-  }, []);
+  }, [doc]);
   return (
     <figure className="figure">
       {isVideo ? (
+        doc ? (
+          <video
+            ref={videoRef}
+            className={"img " + (ratio || "")}
+            src={video}
+            poster={poster ? optimized(poster) : undefined}
+            controls
+            playsInline
+            preload="metadata"
+            aria-label={altText}
+          >
+            <p>{altText}</p>
+          </video>
+        ) : (
         <video
           ref={videoRef}
           className={"img " + (ratio || "")}
@@ -88,6 +105,7 @@ function Fig({ src, num, year, ratio, desc, source, video, poster }) {
         >
           <p>{altText}</p>
         </video>
+        )
       ) : (
         <div className={"img " + (ratio || "")}>
           <Image
@@ -163,6 +181,34 @@ function ListBlock({ head, items, lang }) {
   );
 }
 
+// Fons audiovisuals que viuen fora del microsite (3Cat, Filmoteca, BDN, RTVE…):
+// s'hi enllaça amb autoria i durada, perquè els drets són de tercers.
+function LinksBlock({ head, items, lang }) {
+  const tr = (v) => (typeof v === "string" ? v : v ? v[lang] : "");
+  return (
+    <div className="dlist links">
+      {head && <div className="head">{head}</div>}
+      <ul>
+        {items.map((it, i) => (
+          <li key={i}>
+            {it.href ? (
+              <a className="k" href={it.href} target="_blank" rel="noopener noreferrer">
+                {tr(it.k)}
+                <span className="ext" aria-hidden="true">↗</span>
+              </a>
+            ) : (
+              // Peces citades encara sense URL pública (drets en tràmit).
+              <span className="k">{tr(it.k)}</span>
+            )}
+            {it.t && <span className="v">{renderInline(tr(it.t))}</span>}
+            {it.meta && <span className="m">{tr(it.meta)}</span>}
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
 /* ─────────── Block dispatcher ─────────── */
 function Block({ block, lang }) {
   const tr = (obj) => obj ? obj[lang] : "";
@@ -182,6 +228,7 @@ function Block({ block, lang }) {
         src={block.src}
         video={block.video}
         poster={block.poster}
+        doc={block.doc}
         num={block.num}
         year={block.year}
         ratio={block.ratio}
@@ -196,6 +243,8 @@ function Block({ block, lang }) {
       return <div className="body"><StatsBlock head={tr(block.head)} items={block.items} lang={lang} /></div>;
     case "list":
       return <div className="body"><ListBlock head={tr(block.head)} items={block.items} lang={lang} /></div>;
+    case "links":
+      return <div className="body"><LinksBlock head={tr(block.head)} items={block.items} lang={lang} /></div>;
     default:
       return null;
   }

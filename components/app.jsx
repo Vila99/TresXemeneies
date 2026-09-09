@@ -207,7 +207,7 @@ const LANDING_COPY = {
   ca: {
     eyebrow: 'Microsite',
     title: { main: 'Tres', em: 'Xemeneies' },
-    deck: "Un segle de producció elèctrica i de mobilització veïnal al marge esquerre del Besòs. Vuit capítols sobre el passat, present i futur d'un dels patrimonis industrials més emblemàtics de Catalunya.",
+    deck: "Un segle de producció elèctrica i de mobilització veïnal a la desembocadura del Besòs. Vuit capítols sobre el passat, present i futur d'un dels patrimonis industrials més emblemàtics de Catalunya.",
     chapters: 'Els vuit capítols',
     promoter: 'Promotor',
     languages: 'Idiomes',
@@ -218,7 +218,7 @@ const LANDING_COPY = {
   es: {
     eyebrow: 'Microsite',
     title: { main: 'Tres', em: 'Chimeneas' },
-    deck: 'Un siglo de producción eléctrica y de movilización vecinal en el margen izquierdo del Besòs. Ocho capítulos sobre el pasado, presente y futuro de uno de los patrimonios industriales más emblemáticos de Cataluña.',
+    deck: 'Un siglo de producción eléctrica y de movilización vecinal en la desembocadura del Besòs. Ocho capítulos sobre el pasado, presente y futuro de uno de los patrimonios industriales más emblemáticos de Cataluña.',
     chapters: 'Los ocho capítulos',
     promoter: 'Promotor',
     languages: 'Idiomas',
@@ -229,7 +229,7 @@ const LANDING_COPY = {
   en: {
     eyebrow: 'Microsite',
     title: { main: 'Three', em: 'Chimneys' },
-    deck: "A century of electrical production and citizen mobilization on the left bank of the Besòs. Eight chapters on the past, present and future of one of Catalonia's most emblematic industrial heritage sites.",
+    deck: "A century of electrical production and citizen mobilization at the mouth of the Besòs. Eight chapters on the past, present and future of one of Catalonia's most emblematic industrial heritage sites.",
     chapters: 'The eight chapters',
     promoter: 'Promoted by',
     languages: 'Languages',
