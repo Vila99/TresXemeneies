@@ -6,10 +6,11 @@
  * Mateix criteri que optimize-images.mjs: costat llarg 2000 px i mozjpeg q82.
  * Els originals de la carpeta del client no es toquen.
  *
- * NOTA: `MASTER_DEFINITIUS/` no es versiona (són 321 MB d'originals i vídeo en
- * brut). El script es conserva com a registre de quin original del client va
- * donar cada asset; per tornar-lo a executar cal recuperar la carpeta del
- * WeTransfer del Consorci i deixar-la a l'arrel del projecte.
+ * NOTA: ni `MASTER_DEFINITIUS/` (321 MB d'originals i vídeo en brut) ni
+ * `cambis/` es versionen. El script es conserva com a registre de quin
+ * original del client va donar cada asset; per tornar-lo a executar cal
+ * recuperar les carpetes del WeTransfer del Consorci i deixar-les a l'arrel
+ * del projecte.
  */
 import sharp from 'sharp';
 import { stat } from 'node:fs/promises';
