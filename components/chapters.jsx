@@ -193,12 +193,12 @@ function LinksBlock({ head, items, lang }) {
           <li key={i}>
             {it.href ? (
               <a className="k" href={it.href} target="_blank" rel="noopener noreferrer">
-                {tr(it.k)}
+                {renderInline(tr(it.k))}
                 <span className="ext" aria-hidden="true">↗</span>
               </a>
             ) : (
               // Peces citades encara sense URL pública (drets en tràmit).
-              <span className="k">{tr(it.k)}</span>
+              <span className="k">{renderInline(tr(it.k))}</span>
             )}
             {it.t && <span className="v">{renderInline(tr(it.t))}</span>}
             {it.meta && <span className="m">{tr(it.meta)}</span>}

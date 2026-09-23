@@ -6,7 +6,7 @@ Tot el que hi ha dins de `public/` es publica tal qual a l'arrel del web.
 
 | Carpeta | Contingut |
 |---|---|
-| `fotografies/` | Estat actual (`actual-*`), vistes aèries, imatges històriques (`central-1913-aeria`, `aerea-1913`, `origens-*`, `badalona-i`, `construccio-1971`, `turbines-1988`), material definitiu del client (`icona-goula-frontal`, `manifesta-15-nau`, `memoria-*`), pòsters de vídeo (`poster-*`) i material de la memòria del projecte (`mp-*`). |
+| `fotografies/` | Estat actual (`actual-*`), vistes aèries, imatges històriques (`central-1913-aeria`, `aerea-1913`, `origens-*`, `badalona-i`, `construccio-1971`, `turbines-1988`), material definitiu del client (`icona-goula-frontal`, `manifesta-15-nau`, `memoria-*`, `protesta-1973`), pòsters de vídeo (`poster-*`) i material de la memòria del projecte (`mp-*`). |
 | `renders/` | Renders del PDU, del parc, de la vialitat i de la sala de turbines. |
 | `planols/` | `plan-viz-*` són els plànols simplificats del mapa interactiu (planta baixa, 1 i 2) — els únics referenciats pel codi. `oficial-*` són els plànols oficials redibuixats (inclou soterrani) i `original-*` els escaneigs d'origen. |
 | `videos/` | Clips en `.mp4` (H.264). Els `.mov` originals no es publiquen: Chrome no els reprodueix de forma nativa. |

@@ -26,6 +26,10 @@ const MAP = [
   [`${SRC}/08. l'espai de memòria/2022_11_18_cental_termica_tres_xemeneies_besos_DSC8587.jpg`, 'public/assets/fotografies/memoria-sala-control.jpg'],
   [`${SRC}/08. l'espai de memòria/2022_11_18_cental_termica_tres_xemeneies_besos_DSC8721.jpg`, 'public/assets/fotografies/memoria-contrapicat.jpg'],
   [`${SRC}/08. l'espai de memòria/2023_02_01_tres_xemeneies_DSC2145.jpg`,                      'public/assets/fotografies/memoria-conjunt-litoral.jpg'],
+  // Segona tramesa (`cambis/`, 09.2026): Badalona I sense marca d'aigua i la
+  // protesta del 1973. Arriben en WebP; es normalitzen a JPEG com la resta.
+  ['cambis/1959-Nueva-Central-Termica-de-Carbon-Badalona-I-Endesa.webp', 'public/assets/fotografies/badalona-i.jpg'],
+  ['cambis/1973-protesta-muerte-obrero-Manuel-Fernandez-EP.webp',       'public/assets/fotografies/protesta-1973.jpg'],
 ];
 
 const mb = (n) => (n / 1048576).toFixed(2) + ' MB';

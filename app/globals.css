@@ -1125,6 +1125,10 @@ video.img:focus-visible {
    ENLLAÇOS EXTERNS — fons audiovisuals de tercers
    ============================================================ */
 .dlist.links li{gap:5px}
+/* Aquí la clau és un títol d'obra, no una etiqueta: text normal perquè la
+   cursiva del nom del vídeo es llegeixi (en versaletes mono es perdria). */
+.dlist.links .k{font-family:var(--sans,inherit);font-size:16px;font-weight:600;letter-spacing:0;text-transform:none;color:var(--slate-900);line-height:1.4}
+.dlist.links .k em{font-style:italic}
 .dlist.links a.k{display:inline-flex;align-items:baseline;gap:6px;color:var(--slate-900);text-decoration:none;border-bottom:1px solid var(--slate-600);align-self:flex-start;padding-bottom:1px}
 .dlist.links a.k:hover,.dlist.links a.k:focus-visible{color:var(--slate-700);border-bottom-color:var(--slate-900)}
 .dlist.links a.k .ext{font-size:11px;line-height:1}

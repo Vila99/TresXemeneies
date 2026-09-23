@@ -155,9 +155,9 @@ export const CHAPTERS = [
   {
     slug: "lluita", n: "05",
     title: {
-      ca: { main: "La lluita obrera", em: "i la conservació" },
-      es: { main: "La lucha obrera", em: "y la conservación" },
-      en: { main: "Labour struggle", em: "and conservation" },
+      ca: { main: "La lluita obrera", em: "i el camí cap a la conservació" },
+      es: { main: "La lucha obrera", em: "y el camino hacia la conservación" },
+      en: { main: "Labour struggle", em: "and the road to conservation" },
     },
     deck: {
       ca: "**Un monument a la dignitat laboral.** De la mort de Manuel Fernández Márquez a la consulta ciutadana de 2008.",

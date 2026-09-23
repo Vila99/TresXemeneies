@@ -1,9 +1,9 @@
 // articles.jsx — Contingut complet dels 8 capítols
 //
 // PENDENT DE MATERIAL DEFINITIU (informe del client, 09.2026):
-//   · origens-alternadors, origens-calderes, badalona-i → còpies amb marca
-//     d'aigua del Fons Històric d'Endesa; s'usen com a referència mentre el
-//     Consorci en tramita les definitives.
+//   · origens-alternadors, origens-calderes → còpies amb marca d'aigua del
+//     Fons Històric d'Endesa; s'usen com a referència mentre el Consorci en
+//     tramita les definitives. (badalona-i ja és la definitiva, 09.2026.)
 //   · video-3cat-referendum, video-3cat-platja → còpies de treball de 3Cat amb
 //     timecode i mosca sobreimpresos; drets en tràmit.
 //   · Els enllaços sense `href` (Filmoteca, ON/OFF, Fonamentals, 69/78 PRESCRIT,
@@ -265,7 +265,7 @@ export const ARTICLE_BRUTALISME = [
     es: "Entre **1959 y 1965** se pusieron en marcha las nuevas instalaciones: las plantas **Badalona I** (1959) y **Badalona II** (1965) supusieron un salto energético en la comarca, a la vez que generaron controversia por el aumento de la contaminación atmosférica que provocaban.",
     en: "Between **1959 and 1965** the new facilities came online: **Badalona I** (1959) and **Badalona II** (1965) marked an energy leap for the area, while stirring controversy over the air pollution they caused.",
   }},
-  { kind: "figure", src: "/assets/fotografies/badalona-i.jpg", num: "01", year: "c.1960", ratio: "wide",
+  { kind: "figure", src: "/assets/fotografies/badalona-i.jpg", num: "01", year: "1959", ratio: "cinema",
     desc: {
       ca: "La central de **Badalona I**, en funcionament des del 1959, amb el moll de descàrrega de carbó endinsant-se al mar. És la instal·lació que va generar el *polsim negre* denunciat pel veïnat abans que existissin les Tres Xemeneies.",
       es: "La central de **Badalona I**, en funcionamiento desde 1959, con el muelle de descarga de carbón adentrándose en el mar. Es la instalación que generó el *polvillo negro* denunciado por el vecindario antes de que existieran las Tres Chimeneas.",
@@ -369,9 +369,9 @@ export const ARTICLE_LLUITA = [
     en: "An event that remains engraved in the trade-union identity of Sant Adrià and Badalona.",
   }},
   { kind: "fact", t: {
-    ca: "3 d'abril de 1973. Manuel Fernández Márquez, 27 anys, mor per un tret de la policia durant la repressió d'una protesta laboral. **La seva memòria és inseparable del conjunt.**",
-    es: "3 de abril de 1973. Manuel Fernández Márquez, 27 años, muere por un disparo de la policía durante la represión de una protesta laboral. **Su memoria es inseparable del conjunto.**",
-    en: "3 April 1973. Manuel Fernández Márquez, 27, is shot dead by police during the repression of a labour protest. **His memory is inseparable from the site.**",
+    ca: "3 d'abril de 1973. Manuel Fernández Márquez, 27 anys, mor per un tret de la policia durant la repressió d'una protesta laboral. La seva memòria és inseparable del conjunt.",
+    es: "3 de abril de 1973. Manuel Fernández Márquez, 27 años, muere por un disparo de la policía durante la represión de una protesta laboral. Su memoria es inseparable del conjunto.",
+    en: "3 April 1973. Manuel Fernández Márquez, 27, is shot dead by police during the repression of a labour protest. His memory is inseparable from the site.",
   }},
   { kind: "section", t: { ca: "El camí cap a la conservació", es: "El camino hacia la conservación", en: "The road to conservation" } },
   { kind: "p", t: {
@@ -398,7 +398,15 @@ export const ARTICLE_LLUITA = [
       }},
     ],
   },
-  { kind: "figure", video: "/assets/videos/video-3cat-referendum.mp4", poster: "/assets/fotografies/poster-3cat-referendum.jpg", doc: true, num: "01", year: "2008",
+  { kind: "figure", src: "/assets/fotografies/protesta-1973.jpg", num: "01", year: "1973", ratio: "cinema",
+    desc: {
+      ca: "Marxa de treballadors després de la mort de Manuel Fernández Márquez, amb les xemeneies de les centrals del Besòs al fons.",
+      es: "Marcha de trabajadores tras la muerte de Manuel Fernández Márquez, con las chimeneas de las centrales del Besòs al fondo.",
+      en: "A workers' march after the death of Manuel Fernández Márquez, with the chimneys of the Besòs plants in the background.",
+    },
+    source: { ca: "Europa Press", es: "Europa Press", en: "Europa Press" },
+  },
+  { kind: "figure", video: "/assets/videos/video-3cat-referendum.mp4", poster: "/assets/fotografies/poster-3cat-referendum.jpg", doc: true, num: "02", year: "2008",
     desc: {
       ca: "Informatiu sobre el resultat de la consulta: **Sant Adrià del Besòs: el referèndum aprova la continuïtat de les xemeneies**.",
       es: "Informativo sobre el resultado de la consulta: **Sant Adrià del Besòs: el referéndum aprueba la continuidad de las chimeneas**.",
@@ -658,9 +666,9 @@ export const ARTICLE_MEDIA_CITY = [
   }},
   { kind: "figure", src: "/assets/fotografies/manifesta-15-nau.jpg", num: "03", year: "2024", ratio: "wide",
     desc: {
-      ca: "Instal·lació de **Manifesta 15** a l'interior de la Nau de Turbines, un dels usos temporals que han obert l'edifici al públic.",
-      es: "Instalación de **Manifesta 15** en el interior de la Nave de Turbinas, uno de los usos temporales que han abierto el edificio al público.",
-      en: "A **Manifesta 15** installation inside the Turbine Hall, one of the temporary uses that have opened the building to the public.",
+      ca: "Instal·lació de **Manifesta 15** a l'interior de la Nau de Turbines.",
+      es: "Instalación de **Manifesta 15** en el interior de la Nave de Turbinas.",
+      en: "A **Manifesta 15** installation inside the Turbine Hall.",
     },
     source: { ca: "Adrià Goula · Arxiu Consorci del Besòs", es: "Adrià Goula · Archivo Consorci del Besòs", en: "Adrià Goula · Consorci del Besòs Archive" },
   },
@@ -692,9 +700,9 @@ export const ARTICLE_MEMORIA = [
   }},
   { kind: "figure", src: "/assets/fotografies/memoria-sala-control.jpg", num: "01", year: "2022", ratio: "wide",
     desc: {
-      ca: "La sala de control de la central, amb el pupitre de comandament i els registradors intactes des de l'aturada.",
-      es: "La sala de control de la central, con el pupitre de mando y los registradores intactos desde la parada.",
-      en: "The plant's control room, its command desk and chart recorders untouched since shutdown.",
+      ca: "La sala de control de la central, a la Nau de Turbines.",
+      es: "La sala de control de la central, en la Nave de Turbinas.",
+      en: "The plant's control room, in the Turbine Hall.",
     },
     source: { ca: "Arnau Pascual Monells", es: "Arnau Pascual Monells", en: "Arnau Pascual Monells" },
   },
@@ -720,9 +728,9 @@ export const ARTICLE_MEMORIA = [
   }},
   { kind: "figure", src: "/assets/fotografies/memoria-conjunt-litoral.jpg", num: "03", year: "2023", ratio: "wide",
     desc: {
-      ca: "El que va quedar dret després del desmantellament — les tres xemeneies i la nau de turbines —, des del camí de la platja.",
-      es: "Lo que quedó en pie tras el desmantelamiento — las tres chimeneas y la nave de turbinas —, desde el camino de la playa.",
-      en: "What was left standing after the dismantling — the three chimneys and the turbine hall — seen from the beach path.",
+      ca: "Les tres xemeneies i la nau de turbines des del camí de la platja.",
+      es: "Las tres chimeneas y la nave de turbinas desde el camino de la playa.",
+      en: "The three chimneys and the turbine hall seen from the beach path.",
     },
     source: { ca: "Arnau Pascual Monells", es: "Arnau Pascual Monells", en: "Arnau Pascual Monells" },
   },
@@ -736,7 +744,23 @@ export const ARTICLE_MEMORIA = [
   },
   { kind: "links", head: { ca: "Per continuar consultant", es: "Para seguir consultando", en: "To explore further" },
     items: [
-      { k: { ca: "*ON/OFF: Les Tres Xemeneies* (2023)", es: "*ON/OFF: Les Tres Xemeneies* (2023)", en: "*ON/OFF: Les Tres Xemeneies* (2023)" },
+      { k: {
+          ca: "*'69/78 PRESCRIT*. Fragment: ¡Han matado a un obrero! (2018)",
+          es: "*'69/78 PRESCRIT*. Fragmento: ¡Han matado a un obrero! (2018)",
+          en: "*'69/78 PRESCRIT*. Excerpt: ¡Han matado a un obrero! (2018)",
+        },
+        t: {
+          ca: "Fragment dirigit per Lluís Galter sobre la mort a trets de l'obrer Manuel Fernández Márquez, el 3 d'abril de 1973, dins una pel·lícula sobre els darrers assassinats del franquisme.",
+          es: "Fragmento dirigido por Lluís Galter sobre la muerte a tiros del obrero Manuel Fernández Márquez, el 3 de abril de 1973, dentro de una película sobre los últimos asesinatos del franquismo.",
+          en: "An excerpt directed by Lluís Galter on the shooting of worker Manuel Fernández Márquez on 3 April 1973, from a film about the final killings of the Franco regime.",
+        },
+        meta: { ca: "26′ 27″ · Universitat Pompeu Fabra i Lastor Media", es: "26′ 27″ · Universitat Pompeu Fabra y Lastor Media", en: "26′ 27″ · Universitat Pompeu Fabra and Lastor Media" },
+      },
+      { k: {
+          ca: "*ON/OFF: Les Tres Xemeneies* (2023)",
+          es: "*ON/OFF: Les Tres Xemeneies* (2023)",
+          en: "*ON/OFF: Les Tres Xemeneies* (2023)",
+        },
         t: {
           ca: "El passat, present i futur de la central tèrmica de Sant Adrià de Besòs.",
           es: "El pasado, presente y futuro de la central térmica de Sant Adrià de Besòs.",
@@ -744,7 +768,23 @@ export const ARTICLE_MEMORIA = [
         },
         meta: { ca: "54′ 26″ · Badalona Comunicació", es: "54′ 26″ · Badalona Comunicació", en: "54′ 26″ · Badalona Comunicació" },
       },
-      { k: { ca: "*Xemeneies: Central Tèrmica de Sant Adrià* — Fonamentals (2026)", es: "*Xemeneies: Central Tèrmica de Sant Adrià* — Fonamentals (2026)", en: "*Xemeneies: Central Tèrmica de Sant Adrià* — Fonamentals (2026)" },
+      { k: {
+          ca: "*Nou impuls al Catalunya Media City* (29.03.25)",
+          es: "*Nou impuls al Catalunya Media City* (29.03.25)",
+          en: "*Nou impuls al Catalunya Media City* (29.03.25)",
+        },
+        t: {
+          ca: "Acte de presentació del nou impuls al projecte, encapçalat pel president de la Generalitat de Catalunya, el 29 de març de 2025.",
+          es: "Acto de presentación del nuevo impulso al proyecto, encabezado por el presidente de la Generalitat de Catalunya, el 29 de marzo de 2025.",
+          en: "Presentation of the project's new push, led by the President of the Generalitat de Catalunya, on 29 March 2025.",
+        },
+        meta: { ca: "37′ 45″ · Generalitat de Catalunya", es: "37′ 45″ · Generalitat de Catalunya", en: "37′ 45″ · Generalitat de Catalunya" },
+      },
+      { k: {
+          ca: "*Xemeneies: Central Tèrmica de Sant Adrià* — Fonamentals (2026)",
+          es: "*Xemeneies: Central Tèrmica de Sant Adrià* — Fonamentals (2026)",
+          en: "*Xemeneies: Central Tèrmica de Sant Adrià* — Fonamentals (2026)",
+        },
         t: {
           ca: "Diversos experts recorren la Nau de Turbines i les Tres Xemeneies, i n'analitzen el passat i el futur.",
           es: "Varios expertos recorren la Nave de Turbinas y las Tres Chimeneas, y analizan su pasado y su futuro.",
@@ -752,41 +792,6 @@ export const ARTICLE_MEMORIA = [
         },
         meta: { ca: "30′ 35″ · RTVE", es: "30′ 35″ · RTVE", en: "30′ 35″ · RTVE" },
       },
-      { k: { ca: "*69/78 PRESCRIT: Han matado a un obrero!*", es: "*69/78 PRESCRIT: ¡Han matado a un obrero!*", en: "*69/78 PRESCRIT: Han matado a un obrero!*" },
-        t: {
-          ca: "Fragment dirigit per Lluís Galter sobre la mort a trets de l'obrer **Manuel Fernández Márquez**, el 3 d'abril de 1973, dins una pel·lícula sobre els darrers assassinats del franquisme.",
-          es: "Fragmento dirigido por Lluís Galter sobre la muerte a tiros del obrero **Manuel Fernández Márquez**, el 3 de abril de 1973, dentro de una película sobre los últimos asesinatos del franquismo.",
-          en: "An excerpt directed by Lluís Galter on the shooting of worker **Manuel Fernández Márquez** on 3 April 1973, from a film about the final killings of the Franco regime.",
-        },
-        meta: { ca: "26′ 27″ · Universitat Pompeu Fabra i Lastor Media", es: "26′ 27″ · Universitat Pompeu Fabra y Lastor Media", en: "26′ 27″ · Universitat Pompeu Fabra and Lastor Media" },
-      },
-      { k: { ca: "Nou impuls al Catalunya Media City (2025)", es: "Nuevo impulso al Catalunya Media City (2025)", en: "New push for Catalunya Media City (2025)" },
-        t: {
-          ca: "Acte de presentació del nou impuls al projecte, encapçalat pel president de la Generalitat, el 29 de març de 2025.",
-          es: "Acto de presentación del nuevo impulso al proyecto, encabezado por el presidente de la Generalitat, el 29 de marzo de 2025.",
-          en: "Presentation of the project's new push, led by the President of the Generalitat, on 29 March 2025.",
-        },
-        meta: { ca: "37′ 45″ · Generalitat de Catalunya", es: "37′ 45″ · Generalitat de Catalunya", en: "37′ 45″ · Generalitat de Catalunya" },
-      },
-      { k: { ca: "Refugi antiaeri de Sant Adrià de Besòs", es: "Refugio antiaéreo de Sant Adrià de Besòs", en: "Sant Adrià de Besòs air-raid shelter" },
-        t: {
-          ca: "Museu i espai simbòlic de la placeta Macià, sobre els bombardejos de la Guerra Civil al municipi.",
-          es: "Museo y espacio simbólico de la placeta Macià, sobre los bombardeos de la Guerra Civil en el municipio.",
-          en: "Museum and symbolic space at placeta Macià, on the Civil War bombings of the town.",
-        },
-      },
     ],
-  },
-  { kind: "quote",
-    t: {
-      ca: "Un segle de **producció elèctrica i mobilització veïnal** a la desembocadura del Besòs.",
-      es: "Un siglo de **producción eléctrica y movilización vecinal** en la desembocadura del Besòs.",
-      en: "A century of **electrical production and neighbourhood mobilization** at the mouth of the Besòs.",
-    },
-    cite: {
-      ca: "— Les Tres Xemeneies · 1913 — 2025",
-      es: "— Las Tres Chimeneas · 1913 — 2025",
-      en: "— The Three Chimneys · 1913 — 2025",
-    },
   },
 ];
